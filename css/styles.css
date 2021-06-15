@@ -60,6 +60,7 @@ p{
     margin-top: 50px;
     color: #ffff;
     font-family: 'Roboto', sans-serif;
+    margin: 0 !important;
 }
 
 /* index page css */
