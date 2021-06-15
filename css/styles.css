@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #500000;
+}
+
+img{
+    width:  300px;
+    height: 250px;
+}
+
+.row{
+    text-align:center;
+    /* border:5px solid #000000; */
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+/* Icon Bar: https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+h1{
+    color: #fdfdfd;
+    text-align: center;
+    font-family: 200% Serif;
+}
+
+p{
+    margin-top: 50px;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* index page css */
+.landing-content img{
+    width: 300px;
+    height: 400px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-content ul{
+    margin-top: -10px;
+    color: #ffff;
+    font: 100% Monaco;
+}
+
+/* navigation bar */
+.topnav {
+    align-items: center;
+    background-color: rgb(247, 214, 214);
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+.topnav .navlinks{
+    display: flex;
+    justify-content: center;
+}
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #9b4040;
+    color: white;
+    font-weight: bold;
+}
+
+* { color:#fff; text-decoration: none;}
+
+/* About Me */
+
+.pic{
+    float:left;
+    margin-left: 150px; 
+    margin-top: 75px;
+}
+
+#nhFlag{
+    width: 350px;
+    height: 200px;
+}
+
+
+.text{
+    margin-left: 500px;
+}
+
+.aboutMe-contentp{
+    width: 500px;
+    border: 10px solid #3f0000;
+    padding: 20px;
+    margin: 50px;
+}
+
+.bottompic{
+    width: 300px;
+    height:400px
+}
+
+/*Portfolio*/
+.portfolio-content h1{
+    margin-bottom: 100px;
+}
+
+.portfolio-content p{
+    margin-top: 40px;
+}
+
+.portfolio-content h2{
+    color: #fdfdfd;
+    text-align: center;
+    font: 120% Monaco;
+}
+
+.portfolio-content a{
+    color: #fdfdfd;
+    text-align: center;
+    font: 120% Monaco;
+}
+
+.portfolio-content img{
+    float: left;
+    margin-bottom: 30px;
+}
+
+/*Qualifications*/
+
+.qualifications-content h1{
+    margin-bottom: 100px;
+}
+
+.qualifications-content .qualifications-links li{
+    margin-top: 10px
+}
+
+/*Service*/
+.service-content h1{
+    margin-bottom: 20;
+}
+
+.portfolio-content p{
+    color: #fdfdfd;
+    text-align: center;
+    font: 120% Monaco;
+    margin-top: 40px;
+}
+
+.service-content img{
+    width:  300px;
+    height: 200px;
+}
+
