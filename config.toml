@@ -1,0 +1,84 @@
+baseURL = "https://murphe22.com"
+languageCode = "en-us"
+title = "murphe22"
+theme = "anubis"
+paginate = 4
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[author]
+name = "Emily Murphy"
+
+[params]
+author = "Emily Murphy"
+description = "Emily Murphy's Personal Website"
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "dark"
+readMore = false
+copyCodeButton = true
+rssAsSocialIcon = true
+enableEmoji = true
+
+# utteranc.es support
+utterancesRepo = ""  # mandatory
+utterancesTheme = "" # optional
+utterancesIssue = "" # optional
+utterancesLabel = "" # optional
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'dracula'
+    tabWidth = 4
+
+
+
+[[params.social]]
+id = "linkedin"
+url = "https://www.linkedin.com/in/murphe22/"
+
+[[params.social]]
+id = "github"
+url = "https://github.com/emurph1"
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+name = "Writeups"
+identifier = "writeups"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+identifier = "contact"
+url = "/contact/"
+weight = 3
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
