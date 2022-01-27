@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "murphe22"
 theme = "anubis"
 paginate = 4
+name: Hugo setup
+uses: peaceiris/actions-hugo@v2.4.13
+
 
 disqusShortname = ""
 googleAnalytics = ""
