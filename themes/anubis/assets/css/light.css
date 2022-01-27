@@ -1,7 +1,7 @@
 :root {
    /* light.css */ 
-    --font-color: #333;
-    --bg-color: #fff;
+    --font-color: rgb(0, 0, 0);
+    --bg-color: rgb(80, 153, 248);
 
     --link-color:#1d60a3;
     --link-state-color:#a31d1d;
@@ -22,7 +22,7 @@
     --pagination-bg-color: #fafafa;
     --pagination-link-color: #696969;
 
-    --post-info-color: grey;
+    --post-info-color: rgb(17, 0, 255);
 
     --switcher-color: #fff;
     --switcher-bg-color: #333; 
