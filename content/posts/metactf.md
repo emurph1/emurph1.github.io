@@ -2,7 +2,7 @@
 author = "Emily Murphy"
 title = "MetaCTF 2021"
 date = "2021-12-03"
-description = "Lorem Ipsum Dolor Si Amet"
+description = "MetaCTF CyberGames 2021"
 tags = [
     "ctfs",
     "writeups",

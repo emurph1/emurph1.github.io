@@ -1,12 +1,16 @@
----
-author: Hugo Authors
-title: The CompTIA CySA+ Certification Exam
-date: 2021-03-27
-description: A brief guide to setup KaTeX
-math: true
----
++++
+author = "Emily Murphy"
+title = "CompTIA CySA+"
+date = "2021-3-27"
+description = "My CompTIA CySA+ Journey"
+tags = [
+    "blog",
+    "certs",
+]
+categories = ["blog"]
++++
 
-This is my personal blog/report on how the CompTIA Cybersecurity Analyst+ certifcation exam
+This is my personal blog/report on how the CompTIA Cybersecurity Analyst+ certifcation exam.
 <!--more-->
 
 
