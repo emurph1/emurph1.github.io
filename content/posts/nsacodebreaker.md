@@ -1,19 +1,23 @@
 +++
-author = "Hugo Authors"
+author = "Emily Murphy"
 title = "NSA Codebreakers 2021"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+date = "2022-01-04"
+description = "NSA Codebreaker Writeups"
 tags = [
     "ctfs",
     "writeups",
 ]
 categories = [
     "writeups",
-    "syntax",
 ]
-aliases = ["migrate-from-jekyl"]
 favorite = true
 +++
+
+The 2021 Codebreaker Challenge consists of a series of tasks that are worth a varying amount of points based upon their difficulty. Schools will be ranked according to the total number of points accumulated by their students. Solutions may be submitted at any time for the duration of the Challenge. 
+<!--more-->
+
+# Intro
+NSA Codebreakers was quite a competition, but it was so fun. We had never been very involved with it until this year. Jonathan, Teddy, and I spearheaded recruitment for Codebreakers and we ended up getting almost 400 people from A&M to sign-up! As a university, we ended up in `4th place`. For myself, participating in NSA Codebreakers was a great time and I learned a ton when going through the challenges.
 
 # Task 1
 The NSA Cybersecurity Collaboration Center has a mission to prevent and eradicate threats to the US Defense Industrial Base (DIB). Based on information sharing agreements with several DIB companies, we need to determine if any of those companies are communicating with the actor's infrastructure.
