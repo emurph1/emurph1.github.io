@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>certs on murphe22</title><link>https://murphe22.com/tags/certs/</link><description>murphe22 (certs)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://murphe22.com/tags/certs/index.xml" rel="self" type="application/rss+xml"/><item><title>CompTIA CySA+</title><link>https://murphe22.com/posts/comptiacysa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/comptiacysa/</guid><description>&lt;p>This is my personal blog/report on how the CompTIA Cybersecurity Analyst+ certifcation exam.&lt;/p>
+&lt;h1 id="here-is-how-i-studied-for-the-cysa-cs0-002" >Here is how I studied for the CySA+ CS0-002
+&lt;span>
+&lt;a href="#here-is-how-i-studied-for-the-cysa-cs0-002">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>If you have any questions or want to talk about it, DM me in Discord (@nightfury) or shoot me an email at &lt;a href="mailito:murphe14@tamu.edu">murphe14@tamu.edu&lt;/a>&lt;/p>
+&lt;h2 id="before-getting-started" >Before getting started:
+&lt;span>
+&lt;a href="#before-getting-started">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>With all the links in this doc, I highly encourage you to also watch those YouTube Videos and read all the links that are in here because all of it helps in not only studying for the exam, but knowing everything about the exam (the structure, who takes it, why you should take it, what content it has, etc.)&lt;/p>
+&lt;h2 id="so-what-is-the-exam-cysa" >So, what is the exam?: CySA+
+&lt;span>
+&lt;a href="#so-what-is-the-exam-cysa">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>“CompTIA Cybersecurity Analyst+is an IT workforce certification that applies behavioral analytics to networks and devices to prevent, detect and combat cybersecurity threats through continuous security monitoring.”&lt;/p>
+&lt;ul>
+&lt;li>I took the CS0-002 Exam (CS0-001 is retired as of October 21, 2020 in English)&lt;/li>
+&lt;li>Max of 85 questions in 165 minutes (or 2hrs and 45 min)&lt;/li>
+&lt;li>Passing score: 750 (on a scale of 100 to 900)&lt;/li>
+&lt;li>Recommended experience for CS0-002: Network+, Security+, or equivalent knowledge. Min of 4 years of hands-on experience in infosec or related experience&lt;/li>
+&lt;li>Video Overviews:
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=nh6MTTcaDxU">Colin Kelly&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=iT6t-FFRQkI">David Alves&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="benefits" >Benefits:
+&lt;span>
+&lt;a href="#benefits">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>&lt;strong>NOTE:&lt;/strong> I took this exam since my work sponsored me (I was originally gonna get my Sec+)&lt;/p>
+&lt;ul>
+&lt;li>It is a step up from Sec+ or Network+&lt;/li>
+&lt;li>Specific for security analysts, security engineer, incident response, etc.&lt;/li>
+&lt;li>Meets ISO 17024 standard&lt;/li>
+&lt;li>Meets DoD Directive 8570.01-M requirements&lt;/li>
+&lt;/ul>
+&lt;h2 id="materials" >Materials:
+&lt;span>
+&lt;a href="#materials">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a href="https://academic-store.comptia.org/comptia-acad-cybersecurity-analyst-exam-voucher/p/ACADCompTIACSA">Academic Store&lt;/a>: $240&lt;/li>
+&lt;li>&lt;a href="https://www.udemy.com/course/comptiacsaplus/">Jason Dion Udemy&lt;/a>: $20 (Comes with Practice Test and Study Guide)&lt;/li>
+&lt;li>&lt;a href="https://certify.cybervista.net/products/comptia/cybersecurity-analyst-practice-labs/">PracticeLabs&lt;/a>: $129, but A&amp;amp;M has all PracticeLabs for FREE (contact Jennifer to see if she can get you access)&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.com/CompTIA-CySA-Study-Guide-CS0-002/dp/1119684056/ref=sr_1_3?dchild=1&amp;amp;keywords=cysa%2B+study+guide&amp;amp;qid=1623534463&amp;amp;sr=8-3">Mike Chapple Study Guide for CySA+&lt;/a> (I didn’t use, but is a good study guide) - $36&lt;/li>
+&lt;/ul>
+&lt;h2 id="my-process-studying-for-the-exam" >My process studying for the exam:
+&lt;span>
+&lt;a href="#my-process-studying-for-the-exam">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>I am probably not the best person to talk to about studying for this exam, but I am still gonna note my process here.&lt;/p>
+&lt;p>So originally, I was going to take the Security+ exam and had already started studying for it when my work told me that they were sponsoring the student workers to take the CySA+ exam. Naturally, I thought I could study for both, but then my summer got busy and then the Fall semester rolled around, so I then told myself I would focus on CySA+ for the winter break. Winter break came and I did some studying… I counted doing the TryHackMe as studying and I did some PracticeLabs. Once the next semester began, I finally sat down and scheduled my exam for the end of March.&lt;/p>
+&lt;p>I bought the Jason Dion Udemy course and started watching those videos. I took his practice test in the middle of it and got like a 50%, so I was like oh dear I really need to study more…. Winter storm Uri comes and I instead binge-watched a TV show instead of studying (LOL). So the two weeks before my exam I spent watching the Dion videos and other YouTube videos on the exam, then I actually took the exam and passed!&lt;/p>
+&lt;p>So, overall, my advice is to be diligent with your studying, take multiple practice exams, and if you have the chance to work as an analyst or anything, do it. I think a big reason as to why I passed the exam was because of my work experience as a student analyst.&lt;/p>
+&lt;p>The test itself was very long. You get almost 3 hours and it’s through PearsonVue proctoring. I had to clear my entire desk and not speak during the entire exam. I didn’t realize I couldn’t talk to myself (which I do a lot) and the proctor sent me a message and was like “please don’t talk” and so I shut up haha. I finished the exam with a good amount of time left over, but I still spent at least another hour just re-checking the exam because you can go back to previous questions and stuff. I think I rechecked everything three times before I submitted the exam. And since the exam was online and via the computer, I got my results immediately. It is the same way the Sec+ is formatted. So, you will know your results after you submit and then fill out a short survey.&lt;/p>
+&lt;p>I would recommend this certification exam if you are looking to get a job as a security analyst/blue team-type work because it is a good one for that specific role. If you are into red team work, the opposite exam would be the CompTIA Pentest+ exam. Either way, having these certifications on your resume help in getting the job you want and is a leg up against other candidates.&lt;/p>
+&lt;h2 id="after-you-pass" >After you pass:
+&lt;span>
+&lt;a href="#after-you-pass">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;ul>
+&lt;li>Get a PDF Certificate&lt;/li>
+&lt;li>Access to CompTIA logos&lt;/li>
+&lt;li>Access to their &lt;a href="https://www.certmetrics.com/comptia/login.aspx?ReturnUrl=%2fcomptia%2fdefault.aspx">portal&lt;/a> for people who have passed&lt;/li>
+&lt;li>Maintain your cert!
+&lt;ul>
+&lt;li>CySA+ is good for three years&lt;/li>
+&lt;li>&lt;a href="https://www.comptia.org/continuing-education/">Continuing Education (CE)&lt;/a> - 60 credits needed&lt;/li>
+&lt;li>Must pay $50 annually or $150 for the three years&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
