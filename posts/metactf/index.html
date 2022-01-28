@@ -8,7 +8,7 @@
 <meta name=description content="MetaCTF CyberGames 2021">
 <link rel=icon type=image/x-icon href=https://murphe22.com/favicon.ico>
 <link rel=apple-touch-icon-precomposed href=https://murphe22.com/favicon.png>
-<link rel=stylesheet href=https://murphe22.com/css/style.min.2e66364f1a1eacf38538950d01054f91334df1cdfb322b31600f6b0f3a473a6a.css integrity="sha256-LmY2TxoerPOFOJUNAQVPkTNN8c37MisxYA9rDzpHOmo=">
+<link rel=stylesheet href=https://murphe22.com/css/style.min.9ce0f653bc3fe2fbcbe48434fd8f9b31066b4e87dcda2372445a75f3f3dd3997.css integrity="sha256-nOD2U7w/4vvL5IQ0/Y+bMQZrTofc2iNyRFp18/PdOZc=">
 <script src=https://murphe22.com/js/script.min.510c781c39dbb21b4c76d85c82e2bdf4689220adbb7cd61e49e9d293e442fb42.js type=text/javascript integrity="sha256-UQx4HDnbshtMdthcguK99GiSIK27fNYeSenSk+RC+0I="></script>
 <meta property="og:title" content="MetaCTF 2021">
 <meta property="og:description" content="MetaCTF CyberGames 2021">
@@ -132,56 +132,56 @@ ty gdb v cool</p>
 </a>
 </span>
 </h2><p>Scripting fun:</p>
-<pre tabindex=0><code>import random
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ff79c6>import</span> random
 
-def do_thing(a, b):
-    return ((a &lt;&lt; 1) &amp; b) ^ ((a &lt;&lt; 1) | b)
+<span style=color:#ff79c6>def</span> <span style=color:#50fa7b>do_thing</span>(a, b):
+    <span style=color:#ff79c6>return</span> ((a <span style=color:#ff79c6>&lt;&lt;</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>&amp;</span> b) <span style=color:#ff79c6>^</span> ((a <span style=color:#ff79c6>&lt;&lt;</span> <span style=color:#bd93f9>1</span>) <span style=color:#ff79c6>|</span> b)
 
-def checkFlag(x, prevLen):
-    random.seed(997)
-    k = [random.randint(0, 256) for _ in range(len(x))]
-    a = { b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k) }
-    b = list(range(len(x)))
-    random.shuffle(b)
-    c = [a[i] for i in b[::-1]]
-    # print(k)
-    # print(c)
-    kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
-    valid = len(list(filter(lambda s: kn[s[0]] == s[1], enumerate(c))))
-    # print(valid)
-    if valid &gt; prevLen:
-        return True
-    return False
+<span style=color:#ff79c6>def</span> <span style=color:#50fa7b>checkFlag</span>(x, prevLen):
+    random<span style=color:#ff79c6>.</span>seed(<span style=color:#bd93f9>997</span>)
+    k <span style=color:#ff79c6>=</span> [random<span style=color:#ff79c6>.</span>randint(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>256</span>) <span style=color:#ff79c6>for</span> _ <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>len</span>(x))]
+    a <span style=color:#ff79c6>=</span> { b: do_thing(<span style=color:#8be9fd;font-style:italic>ord</span>(c), d) <span style=color:#ff79c6>for</span> (b, c), d <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>zip</span>(<span style=color:#8be9fd;font-style:italic>enumerate</span>(x), k) }
+    b <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>list</span>(<span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#8be9fd;font-style:italic>len</span>(x)))
+    random<span style=color:#ff79c6>.</span>shuffle(b)
+    c <span style=color:#ff79c6>=</span> [a[i] <span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> b[::<span style=color:#ff79c6>-</span><span style=color:#bd93f9>1</span>]]
+    <span style=color:#6272a4># print(k)</span>
+    <span style=color:#6272a4># print(c)</span>
+    kn <span style=color:#ff79c6>=</span> [<span style=color:#bd93f9>47</span>, <span style=color:#bd93f9>123</span>, <span style=color:#bd93f9>113</span>, <span style=color:#bd93f9>232</span>, <span style=color:#bd93f9>118</span>, <span style=color:#bd93f9>98</span>, <span style=color:#bd93f9>183</span>, <span style=color:#bd93f9>183</span>, <span style=color:#bd93f9>77</span>, <span style=color:#bd93f9>64</span>, <span style=color:#bd93f9>218</span>, <span style=color:#bd93f9>223</span>, <span style=color:#bd93f9>232</span>, <span style=color:#bd93f9>82</span>, <span style=color:#bd93f9>16</span>, <span style=color:#bd93f9>72</span>, <span style=color:#bd93f9>68</span>, <span style=color:#bd93f9>191</span>, <span style=color:#bd93f9>54</span>, <span style=color:#bd93f9>116</span>, <span style=color:#bd93f9>38</span>, <span style=color:#bd93f9>151</span>, <span style=color:#bd93f9>174</span>, <span style=color:#bd93f9>234</span>, <span style=color:#bd93f9>127</span>]
+    valid <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>len</span>(<span style=color:#8be9fd;font-style:italic>list</span>(<span style=color:#8be9fd;font-style:italic>filter</span>(<span style=color:#ff79c6>lambda</span> s: kn[s[<span style=color:#bd93f9>0</span>]] <span style=color:#ff79c6>==</span> s[<span style=color:#bd93f9>1</span>], <span style=color:#8be9fd;font-style:italic>enumerate</span>(c))))
+    <span style=color:#6272a4># print(valid)</span>
+    <span style=color:#ff79c6>if</span> valid <span style=color:#ff79c6>&gt;</span> prevLen:
+        <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>True</span>
+    <span style=color:#ff79c6>return</span> <span style=color:#ff79c6>False</span>
 
-#random.seed(997)
+<span style=color:#6272a4>#random.seed(997)</span>
 
-k = [random.randint(0, 256) for _ in range(25)]
-# print(k)
+k <span style=color:#ff79c6>=</span> [random<span style=color:#ff79c6>.</span>randint(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>256</span>) <span style=color:#ff79c6>for</span> _ <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>25</span>)]
+<span style=color:#6272a4># print(k)</span>
 
-#x = &quot;A&quot;*25
+<span style=color:#6272a4>#x = &#34;A&#34;*25</span>
 
-# a = {b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k)}
+<span style=color:#6272a4># a = {b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k)}</span>
 
-#kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
+<span style=color:#6272a4>#kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]</span>
 
-# write a loop to go through all the possible ascii 
-# values and do_thing it with all values in k
+<span style=color:#6272a4># write a loop to go through all the possible ascii </span>
+<span style=color:#6272a4># values and do_thing it with all values in k</span>
 
-currFlag = 'MetaCTF{'
+currFlag <span style=color:#ff79c6>=</span> <span style=color:#f1fa8c>&#39;MetaCTF{&#39;</span>
 
-for i in range(25 - 8):
-    for j in range(0, 128):
-        nextFlag = currFlag + chr(j) + 'A'*(16-i)
-        # print(&quot;test&quot;)
-        print(nextFlag)
-        assert(len(nextFlag) == 25)
-        if checkFlag(nextFlag, len(currFlag)):
-            # print(nextFlag)
-            currFlag = currFlag + chr(j)
-            break
+<span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>25</span> <span style=color:#ff79c6>-</span> <span style=color:#bd93f9>8</span>):
+    <span style=color:#ff79c6>for</span> j <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>0</span>, <span style=color:#bd93f9>128</span>):
+        nextFlag <span style=color:#ff79c6>=</span> currFlag <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>chr</span>(j) <span style=color:#ff79c6>+</span> <span style=color:#f1fa8c>&#39;A&#39;</span><span style=color:#ff79c6>*</span>(<span style=color:#bd93f9>16</span><span style=color:#ff79c6>-</span>i)
+        <span style=color:#6272a4># print(&#34;test&#34;)</span>
+        <span style=color:#8be9fd;font-style:italic>print</span>(nextFlag)
+        <span style=color:#ff79c6>assert</span>(<span style=color:#8be9fd;font-style:italic>len</span>(nextFlag) <span style=color:#ff79c6>==</span> <span style=color:#bd93f9>25</span>)
+        <span style=color:#ff79c6>if</span> checkFlag(nextFlag, <span style=color:#8be9fd;font-style:italic>len</span>(currFlag)):
+            <span style=color:#6272a4># print(nextFlag)</span>
+            currFlag <span style=color:#ff79c6>=</span> currFlag <span style=color:#ff79c6>+</span> <span style=color:#8be9fd;font-style:italic>chr</span>(j)
+            <span style=color:#ff79c6>break</span>
 
-# print(currFlag)
-</code></pre><p><code>MetaCTF{yOu_w!N_th1$_0n3}</code></p>
+<span style=color:#6272a4># print(currFlag)</span>
+</code></pre></div><p><code>MetaCTF{yOu_w!N_th1$_0n3}</code></p>
 <h1 id=interception-i>Interception I
 <span>
 <a href=#interception-i><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
@@ -232,9 +232,9 @@ ssh <a href=mailto:ctf-46ed3559da08@host.cg21.metaproblems.com>ctf-46ed3559da08@
 <li>There are more hosts up, so let&rsquo;s see what is open.</li>
 </ol>
 <p><code>nmap -p 8000 192.168.0.0/24 -v | grep open</code></p>
-<pre tabindex=0><code>Discovered open port 8000/tcp on 192.168.0.78
-8000/tcp open http-alt
-</code></pre><ol start=2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>Discovered <span style=color:#8be9fd;font-style:italic>open</span> port <span style=color:#bd93f9>8000</span><span style=color:#ff79c6>/</span>tcp on <span style=color:#bd93f9>192.168.0.78</span>
+<span style=color:#bd93f9>8000</span><span style=color:#ff79c6>/</span>tcp <span style=color:#8be9fd;font-style:italic>open</span> http<span style=color:#ff79c6>-</span>alt
+</code></pre></div><ol start=2>
 <li>Ping to test connection.</li>
 </ol>
 <p><code>ping 192.168.0.78</code></p>
@@ -242,8 +242,8 @@ ssh <a href=mailto:ctf-46ed3559da08@host.cg21.metaproblems.com>ctf-46ed3559da08@
 <li>Check interface that we gotta change</li>
 </ol>
 <p><code>arp -a</code></p>
-<pre tabindex=0><code>ip-192-168-0-78.ec2.internal (192.168.0.78) at 02:42:0a:00:a3:c3 [ether] on eth0
-</code></pre><ol start=4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>ip<span style=color:#ff79c6>-</span><span style=color:#bd93f9>192</span><span style=color:#ff79c6>-</span><span style=color:#bd93f9>168</span><span style=color:#ff79c6>-</span><span style=color:#bd93f9>0</span><span style=color:#ff79c6>-</span><span style=color:#bd93f9>78.</span>ec2<span style=color:#ff79c6>.</span>internal (<span style=color:#bd93f9>192.168.0.78</span>) at <span style=color:#bd93f9>02</span>:<span style=color:#bd93f9>42</span>:<span style=color:#bd93f9>0</span>a:<span style=color:#bd93f9>00</span>:a3:c3 [ether] on eth0
+</code></pre></div><ol start=4>
 <li>Change the ip</li>
 </ol>
 <p><code>ifconfig eth0 192.168.0.78 netmask 255.255.255.0</code></p>
@@ -377,17 +377,17 @@ password: admin
 </a>
 </span>
 </h2><p>Looking at the pcap -> notice the user agent (this is a good way to identify C2 frameworks).</p>
-<pre tabindex=0><code>GET /en-us/docs.html HTTP/1.1
-User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
-Host: 52.44.115.131:8080
-Cookie: ASPSESSIONID=fc1060eace; SESSIONID=1552332971750
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>GET <span style=color:#ff79c6>/</span>en<span style=color:#ff79c6>-</span>us<span style=color:#ff79c6>/</span>docs<span style=color:#ff79c6>.</span>html HTTP<span style=color:#ff79c6>/</span><span style=color:#bd93f9>1.1</span>
+User<span style=color:#ff79c6>-</span>Agent: Mozilla<span style=color:#ff79c6>/</span><span style=color:#bd93f9>5.0</span> (Windows NT <span style=color:#bd93f9>6.1</span>) AppleWebKit<span style=color:#ff79c6>/</span><span style=color:#bd93f9>537.36</span> (KHTML, like Gecko) Chrome<span style=color:#ff79c6>/</span><span style=color:#bd93f9>41.0.2228.0</span> Safari<span style=color:#ff79c6>/</span><span style=color:#bd93f9>537.36</span>
+Host: <span style=color:#bd93f9>52.44.115.131</span>:<span style=color:#bd93f9>8080</span>
+Cookie: ASPSESSIONID<span style=color:#ff79c6>=</span>fc1060eace; SESSIONID<span style=color:#ff79c6>=</span><span style=color:#bd93f9>1552332971750</span>
 
-HTTP/1.1 200 OK
-Date: Mon, 22 Nov 2021 01:33:24 GMT
-Content-Type: text/plain; charset=utf-8
-Server: Microsoft-IIS/7.5
-Transfer-Encoding: chunked
-</code></pre><p>Google search on the SESSIONID: find <a href=https://github.com/sclow/covenant_mgmt/blob/main/config.yml.example>GitHub</a></p>
+HTTP<span style=color:#ff79c6>/</span><span style=color:#bd93f9>1.1</span> <span style=color:#bd93f9>200</span> OK
+Date: Mon, <span style=color:#bd93f9>22</span> Nov <span style=color:#bd93f9>2021</span> <span style=color:#bd93f9>01</span>:<span style=color:#bd93f9>33</span>:<span style=color:#bd93f9>24</span> GMT
+Content<span style=color:#ff79c6>-</span>Type: text<span style=color:#ff79c6>/</span>plain; charset<span style=color:#ff79c6>=</span>utf<span style=color:#ff79c6>-</span><span style=color:#bd93f9>8</span>
+Server: Microsoft<span style=color:#ff79c6>-</span>IIS<span style=color:#ff79c6>/</span><span style=color:#bd93f9>7.5</span>
+Transfer<span style=color:#ff79c6>-</span>Encoding: chunked
+</code></pre></div><p>Google search on the SESSIONID: find <a href=https://github.com/sclow/covenant_mgmt/blob/main/config.yml.example>GitHub</a></p>
 <p><code>MetaCTF{Covenant}</code></p>
 </div>
 <div class=post-info>

@@ -51,34 +51,34 @@
 &lt;/h2>&lt;ol>
 &lt;li>
 &lt;p>go into vim -&amp;gt; visual block mode to add the filter&lt;/p>
-&lt;pre tabindex="0">&lt;code>ip.src==198.18.152.0/23
-|| ip.src==10.226.176.0/21
-|| ip.src==192.168.20.128/25
-|| ip.src==10.36.0.0/18
-|| ip.src==10.147.88.0/22
-|| ip.src==192.168.19.0/27
-|| ip.src==198.19.122.144/28
-|| ip.src==198.18.23.160/29
-|| ip.src==10.198.78.0/26
-|| ip.src==10.147.176.0/22
-|| ip.src==10.244.177.128/26
-|| ip.src==10.44.192.0/20
-|| ip.src==10.28.176.0/20
-|| ip.src==10.0.0.0/18
-|| ip.src==198.19.39.128/25
-|| ip.src==198.18.79.144/28
-|| ip.src==10.57.162.0/24
-|| ip.src==198.19.246.160/27
-|| ip.src==192.168.131.0/28
-|| ip.src==10.201.15.0/24
-|| ip.src==198.18.92.136/29
-|| ip.src==198.19.206.0/25
-|| ip.src==10.254.178.104/29
-|| ip.src==10.47.0.0/16
-|| ip.src==10.233.93.0/24
-|| ip.src==10.246.32.0/19
-!(ip.src==10.120.14.143)
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.18.152.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">23&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.226.176.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">21&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">192.168.20.128&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">25&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.36.0.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">18&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.147.88.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">22&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">192.168.19.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">27&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.19.122.144&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">28&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.18.23.160&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">29&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.198.78.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">26&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.147.176.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">22&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.244.177.128&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">26&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.44.192.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">20&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.28.176.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">20&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.0.0.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">18&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.19.39.128&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">25&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.18.79.144&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">28&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.57.162.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">24&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.19.246.160&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">27&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">192.168.131.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">28&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.201.15.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">24&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.18.92.136&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">29&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">198.19.206.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">25&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.254.178.104&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">29&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.47.0.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">16&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.233.93.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">24&lt;/span>
+&lt;span style="color:#ff79c6">||&lt;/span> ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.246.32.0&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">19&lt;/span>
+!(ip&lt;span style="color:#ff79c6">.&lt;/span>src&lt;span style="color:#ff79c6">==&lt;/span>&lt;span style="color:#bd93f9">10.120.14.143&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Go into wireshark and paste that input in the filter field&lt;/p>
 &lt;/li>
@@ -111,29 +111,29 @@
 &lt;li>
 &lt;p>Using the ip from the previous task and under the subnet defined in the oops_subnet.txt, run a grep to look within the proxy.log (where the ip is the listening post)&lt;/p>
 &lt;p>&lt;code>grep 10.120.14.143 proxy.log&lt;/code>&lt;/p>
-&lt;pre tabindex="0">&lt;code>2021-03-16 08:34:49 40 10.210.95.77 200 TCP_MISS 12734 479 GET http xomtq.invalid analysis - - DIRECT **10.120.14.143** application/octet-stream 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' PROXIED none - 10.210.94.189 SG-HTTP-Service - none -
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#bd93f9">2021&lt;/span>&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">03&lt;/span>&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">16&lt;/span> &lt;span style="color:#bd93f9">08&lt;/span>:&lt;span style="color:#bd93f9">34&lt;/span>:&lt;span style="color:#bd93f9">49&lt;/span> &lt;span style="color:#bd93f9">40&lt;/span> &lt;span style="color:#bd93f9">10.210.95.77&lt;/span> &lt;span style="color:#bd93f9">200&lt;/span> TCP_MISS &lt;span style="color:#bd93f9">12734&lt;/span> &lt;span style="color:#bd93f9">479&lt;/span> GET http xomtq&lt;span style="color:#ff79c6">.&lt;/span>invalid analysis &lt;span style="color:#ff79c6">-&lt;/span> &lt;span style="color:#ff79c6">-&lt;/span> DIRECT &lt;span style="color:#ff79c6">**&lt;/span>&lt;span style="color:#bd93f9">10.120.14.143&lt;/span>&lt;span style="color:#ff79c6">**&lt;/span> application&lt;span style="color:#ff79c6">/&lt;/span>octet&lt;span style="color:#ff79c6">-&lt;/span>stream &lt;span style="color:#f1fa8c">&amp;#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36&amp;#39;&lt;/span> PROXIED none &lt;span style="color:#ff79c6">-&lt;/span> &lt;span style="color:#bd93f9">10.210.94.189&lt;/span> SG&lt;span style="color:#ff79c6">-&lt;/span>HTTP&lt;span style="color:#ff79c6">-&lt;/span>Service &lt;span style="color:#ff79c6">-&lt;/span> none &lt;span style="color:#ff79c6">-&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Clean up the logins.json&lt;/p>
 &lt;p>&lt;code>grep &amp;quot;logon\|log off&amp;quot; logins.json&lt;/code>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Create a Python script to parse through the JSON data to find the logons and log offs and see which LogonIds are associated with the time found from step 1&lt;/p>
-&lt;pre tabindex="0">&lt;code>0X339534
-0X339757
-0X33946D
-0X339870
-0X339989
-0X339A8A
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#bd93f9">0X339534&lt;/span>
+&lt;span style="color:#bd93f9">0X339757&lt;/span>
+&lt;span style="color:#bd93f9">0X33946D&lt;/span>
+&lt;span style="color:#bd93f9">0X339870&lt;/span>
+&lt;span style="color:#bd93f9">0X339989&lt;/span>
+&lt;span style="color:#bd93f9">0X339A8A&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>use a grep to in the json to find the specific LogonId with the IP from step 1&lt;/p>
 &lt;p>a. &amp;ldquo;-E&amp;rdquo; means extended using a regex expression
 i. you could do it without regex which is the grep query below (where the &amp;ldquo;&amp;quot; before the pipe notes that it is a OR operation)&lt;/p>
 &lt;p>&lt;code>grep -E &amp;quot;0X339534|0X339757|0X33946D|0X339870|0X339989|0X339A8A&amp;quot; narrowed.json | grep &amp;quot;10.210.95.77&amp;quot;&lt;/code>&lt;/p>
 &lt;p>&lt;code>grep &amp;quot;0X339534\|0X339757\|0X33946D\|0X339870\|0X339989\|0X339A8A&amp;quot; narrowed.json | grep &amp;quot;10.210.95.77&amp;quot;&lt;/code>&lt;/p>
-&lt;pre tabindex="0">&lt;code>{&amp;quot;PayloadData1&amp;quot;: &amp;quot;Target: OOPS.NET\\chambers.jennifer&amp;quot;, &amp;quot;PayloadData2&amp;quot;: &amp;quot;LogonType 3&amp;quot;, &amp;quot;PayloadData3&amp;quot;: &amp;quot;LogonId: 0X33946D&amp;quot;, &amp;quot;UserName&amp;quot;: &amp;quot;-\\-&amp;quot;, &amp;quot;RemoteHost&amp;quot;: &amp;quot;- (10.210.95.77)&amp;quot;, &amp;quot;ExecutableInfo&amp;quot;: &amp;quot;-&amp;quot;, &amp;quot;MapDescription&amp;quot;: &amp;quot;Successful logon&amp;quot;, &amp;quot;ChunkNumber&amp;quot;: 0, &amp;quot;Computer&amp;quot;: &amp;quot;OOPS-DC.oops.net&amp;quot;, &amp;quot;Payload&amp;quot;: &amp;quot;{\&amp;quot;EventData\&amp;quot;: {\&amp;quot;Data\&amp;quot;: [{\&amp;quot;@Name\&amp;quot;: \&amp;quot;SubjectUserSid\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;S-1-0-0\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;SubjectUserName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;SubjectDomainName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;SubjectLogonId\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;0x0\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetUserSid\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;S-1-5-21-3521346-774097835-5683131894-1126\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetUserName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;chambers.jennifer\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetDomainName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;OOPS.NET\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetLogonId\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;0X33946D\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;LogonType\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;3\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;LogonProcessName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;Kerberos\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;AuthenticationPackageName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;Kerberos\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;WorkstationName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;LogonGuid\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;c5dfa92b-9ee6-4b7b-9029-207959f780e7\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TransmittedServices\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;LmPackageName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;KeyLength\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;0\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;ProcessId\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;0x0\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;ProcessName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;IpAddress\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;10.210.95.77\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;IpPort\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;39845\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;ImpersonationLevel\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;%%1833\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;RestrictedAdminMode\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetOutboundUserName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetOutboundDomainName\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;-\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;VirtualAccount\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;%%1843\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;TargetLinkedLogonId\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;0x0\&amp;quot;}, {\&amp;quot;@Name\&amp;quot;: \&amp;quot;ElevatedToken\&amp;quot;, \&amp;quot;#text\&amp;quot;: \&amp;quot;%%1842\&amp;quot;}]}}&amp;quot;, &amp;quot;Channel&amp;quot;: &amp;quot;Security&amp;quot;, &amp;quot;Provider&amp;quot;: &amp;quot;Microsoft-Windows-Security-Auditing&amp;quot;, &amp;quot;EventId&amp;quot;: 4624, &amp;quot;EventRecordId&amp;quot;: &amp;quot;5378&amp;quot;, &amp;quot;ProcessId&amp;quot;: 693, &amp;quot;ThreadId&amp;quot;: 5958, &amp;quot;Level&amp;quot;: &amp;quot;LogAlways&amp;quot;, &amp;quot;Keywords&amp;quot;: &amp;quot;Audit success&amp;quot;, &amp;quot;SourceFile&amp;quot;: &amp;quot;C:\\Windows\\system32\\winevt\\Logs\\Security.evtx&amp;quot;, &amp;quot;ExtraDataOffset&amp;quot;: 0, &amp;quot;HiddenRecord&amp;quot;: false, &amp;quot;TimeCreated&amp;quot;: &amp;quot;2021-03-16T12:09:22.6771601+00:00&amp;quot;, &amp;quot;RecordNumber&amp;quot;: &amp;quot;5378&amp;quot;}
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">{&lt;span style="color:#f1fa8c">&amp;#34;PayloadData1&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;Target: OOPS.NET\\chambers.jennifer&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;PayloadData2&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;LogonType 3&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;PayloadData3&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;LogonId: 0X33946D&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;UserName&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;-\\-&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;RemoteHost&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;- (10.210.95.77)&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;ExecutableInfo&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;-&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;MapDescription&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;Successful logon&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;ChunkNumber&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#bd93f9">0&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;Computer&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;OOPS-DC.oops.net&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;Payload&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;{\&amp;#34;EventData\&amp;#34;: {\&amp;#34;Data\&amp;#34;: [{\&amp;#34;@Name\&amp;#34;: \&amp;#34;SubjectUserSid\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;S-1-0-0\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;SubjectUserName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;SubjectDomainName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;SubjectLogonId\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;0x0\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetUserSid\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;S-1-5-21-3521346-774097835-5683131894-1126\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetUserName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;chambers.jennifer\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetDomainName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;OOPS.NET\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetLogonId\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;0X33946D\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;LogonType\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;3\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;LogonProcessName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;Kerberos\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;AuthenticationPackageName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;Kerberos\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;WorkstationName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;LogonGuid\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;c5dfa92b-9ee6-4b7b-9029-207959f780e7\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TransmittedServices\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;LmPackageName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;KeyLength\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;0\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;ProcessId\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;0x0\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;ProcessName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;IpAddress\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;10.210.95.77\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;IpPort\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;39845\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;ImpersonationLevel\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;%%1833\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;RestrictedAdminMode\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetOutboundUserName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetOutboundDomainName\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;-\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;VirtualAccount\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;%%1843\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;TargetLinkedLogonId\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;0x0\&amp;#34;}, {\&amp;#34;@Name\&amp;#34;: \&amp;#34;ElevatedToken\&amp;#34;, \&amp;#34;#text\&amp;#34;: \&amp;#34;%%1842\&amp;#34;}]}}&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;Channel&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;Security&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;Provider&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;Microsoft-Windows-Security-Auditing&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;EventId&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#bd93f9">4624&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;EventRecordId&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;5378&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;ProcessId&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#bd93f9">693&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;ThreadId&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#bd93f9">5958&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;Level&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;LogAlways&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;Keywords&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;Audit success&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;SourceFile&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;C:\\Windows\\system32\\winevt\\Logs\\Security.evtx&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;ExtraDataOffset&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#bd93f9">0&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;HiddenRecord&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#ff79c6">false&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;TimeCreated&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;2021-03-16T12:09:22.6771601+00:00&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#34;RecordNumber&amp;#34;&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;5378&amp;#34;&lt;/span>}
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>LogonId: 0X33946D&lt;/strong>&lt;/p>
 &lt;/li>
@@ -354,48 +354,48 @@ $prev
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>Gotta allocate memory for the string.&lt;/p>
-&lt;pre tabindex="0">&lt;code>gef➤ call (string *) malloc(sizeof(std::string))
-$3 = (std::string *) 0x555555da4e10
-gef➤ call ((std::string*)0x555555da4e10)-&amp;gt;basic_string()
-gef➤ call ((std::string*)0x555555da4e10)-&amp;gt;assign
-(&amp;quot;4da468db-1daa-481c-9be7-d9feee42a436&amp;quot;)
-$4 = (std::__cxx11::basic_string&amp;lt;char, std::char_traits&amp;lt;char&amp;gt;, std::allocator&amp;lt;char&amp;gt; &amp;gt; &amp;amp;) @0x555555da4e10: {
-static npos = 0xffffffffffffffff,
-_M_dataplus = {
-&amp;lt;std::allocator&amp;lt;char&amp;gt;&amp;gt; = {
-&amp;lt;__gnu_cxx::new_allocator&amp;lt;char&amp;gt;&amp;gt; = {&amp;lt;No data fields&amp;gt;}, &amp;lt;No data fields&amp;gt;},
-members of std::__cxx11::basic_string&amp;lt;char, std::char_traits&amp;lt;char&amp;gt;, std::allocator&amp;lt;char&amp;gt; &amp;gt;::_Alloc_hider:
-_M_p = 0x555555da4e70 &amp;quot;4da468db-1daa-481c-9be7-d9feee42a436&amp;quot;
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c++" data-lang="c++">gef➤ call (string &lt;span style="color:#ff79c6">*&lt;/span>) malloc(&lt;span style="color:#ff79c6">sizeof&lt;/span>(std&lt;span style="color:#ff79c6">::&lt;/span>string))
+$&lt;span style="color:#bd93f9">3&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> (std&lt;span style="color:#ff79c6">::&lt;/span>string &lt;span style="color:#ff79c6">*&lt;/span>) &lt;span style="color:#bd93f9">0x555555da4e10&lt;/span>
+gef➤ call ((std&lt;span style="color:#ff79c6">::&lt;/span>string&lt;span style="color:#ff79c6">*&lt;/span>)&lt;span style="color:#bd93f9">0x555555da4e10&lt;/span>)&lt;span style="color:#ff79c6">-&amp;gt;&lt;/span>basic_string()
+gef➤ call ((std&lt;span style="color:#ff79c6">::&lt;/span>string&lt;span style="color:#ff79c6">*&lt;/span>)&lt;span style="color:#bd93f9">0x555555da4e10&lt;/span>)&lt;span style="color:#ff79c6">-&amp;gt;&lt;/span>assign
+(&lt;span style="color:#f1fa8c">&amp;#34;4da468db-1daa-481c-9be7-d9feee42a436&amp;#34;&lt;/span>)
+$&lt;span style="color:#bd93f9">4&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> (std&lt;span style="color:#ff79c6">::&lt;/span>__cxx11&lt;span style="color:#ff79c6">::&lt;/span>basic_string&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>, std&lt;span style="color:#ff79c6">::&lt;/span>char_traits&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>, std&lt;span style="color:#ff79c6">::&lt;/span>allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">&amp;amp;&lt;/span>) @&lt;span style="color:#bd93f9">0x555555da4e10&lt;/span>&lt;span style="color:#ff79c6">:&lt;/span> {
+&lt;span style="color:#ff79c6">static&lt;/span> npos &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0xffffffffffffffff&lt;/span>,
+_M_dataplus &lt;span style="color:#ff79c6">=&lt;/span> {
+&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>std&lt;span style="color:#ff79c6">::&lt;/span>allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> {
+&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>__gnu_cxx&lt;span style="color:#ff79c6">::&lt;/span>new_allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> {&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>No data fields&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>}, &lt;span style="color:#ff79c6">&amp;lt;&lt;/span>No data fields&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>},
+members of std&lt;span style="color:#ff79c6">::&lt;/span>__cxx11&lt;span style="color:#ff79c6">::&lt;/span>basic_string&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>, std&lt;span style="color:#ff79c6">::&lt;/span>char_traits&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>, std&lt;span style="color:#ff79c6">::&lt;/span>allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">&amp;gt;::&lt;/span>&lt;span style="color:#8be9fd;font-style:italic">_Alloc_hider&lt;/span>:
+_M_p &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0x555555da4e70&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;4da468db-1daa-481c-9be7-d9feee42a436&amp;#34;&lt;/span>
 },
-_M_string_length = 0x24,
+_M_string_length &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0x24&lt;/span>,
 {
-_M_local_buf = &amp;quot;$&amp;quot;, '\000' &amp;lt;repeats 14 times&amp;gt;,
-_M_allocated_capacity = 0x24
+_M_local_buf &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;$&amp;#34;&lt;/span>, &lt;span style="color:#f1fa8c">&amp;#39;\000&amp;#39;&lt;/span> &lt;span style="color:#ff79c6">&amp;lt;&lt;/span>repeats &lt;span style="color:#bd93f9">14&lt;/span> times&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>,
+_M_allocated_capacity &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0x24&lt;/span>
 }
 }
-&lt;/code>&lt;/pre>&lt;p>Now we can call the function that allocates it with the UUID&amp;hellip;&lt;/p>
-&lt;pre tabindex="0">&lt;code>gef➤ call elcftaqudeovx(*(const std::string*)0x555555da4e10,0x10)
-$9 = {
-static npos = 0xffffffffffffffff,
-_M_dataplus = {
-&amp;lt;std::allocator&amp;lt;char&amp;gt;&amp;gt; = {
-&amp;lt;__gnu_cxx::new_allocator&amp;lt;char&amp;gt;&amp;gt; = {&amp;lt;No data fields&amp;gt;}, &amp;lt;No data fields&amp;gt;},
-members of std::__cxx11::basic_string&amp;lt;char, std::char_traits&amp;lt;char&amp;gt;, std::allocator&amp;lt;char&amp;gt; &amp;gt;::_Alloc_hider:
-_M_p = 0x7fffffffddf0 &amp;quot;&amp;quot;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now we can call the function that allocates it with the UUID&amp;hellip;&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c++" data-lang="c++">gef➤ call elcftaqudeovx(&lt;span style="color:#ff79c6">*&lt;/span>(&lt;span style="color:#ff79c6">const&lt;/span> std&lt;span style="color:#ff79c6">::&lt;/span>string&lt;span style="color:#ff79c6">*&lt;/span>)&lt;span style="color:#bd93f9">0x555555da4e10&lt;/span>,&lt;span style="color:#bd93f9">0x10&lt;/span>)
+$&lt;span style="color:#bd93f9">9&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> {
+&lt;span style="color:#ff79c6">static&lt;/span> npos &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0xffffffffffffffff&lt;/span>,
+_M_dataplus &lt;span style="color:#ff79c6">=&lt;/span> {
+&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>std&lt;span style="color:#ff79c6">::&lt;/span>allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> {
+&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>__gnu_cxx&lt;span style="color:#ff79c6">::&lt;/span>new_allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> {&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>No data fields&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>}, &lt;span style="color:#ff79c6">&amp;lt;&lt;/span>No data fields&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>},
+members of std&lt;span style="color:#ff79c6">::&lt;/span>__cxx11&lt;span style="color:#ff79c6">::&lt;/span>basic_string&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>, std&lt;span style="color:#ff79c6">::&lt;/span>char_traits&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>, std&lt;span style="color:#ff79c6">::&lt;/span>allocator&lt;span style="color:#ff79c6">&amp;lt;&lt;/span>&lt;span style="color:#8be9fd">char&lt;/span>&lt;span style="color:#ff79c6">&amp;gt;&lt;/span> &lt;span style="color:#ff79c6">&amp;gt;::&lt;/span>&lt;span style="color:#8be9fd;font-style:italic">_Alloc_hider&lt;/span>:
+_M_p &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0x7fffffffddf0&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;&amp;#34;&lt;/span>
 },
-_M_string_length = 0x0,
+_M_string_length &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0x0&lt;/span>,
 {
-_M_local_buf = '\000' &amp;lt;repeats 15 times&amp;gt;,
-_M_allocated_capacity = 0x0
+_M_local_buf &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#f1fa8c">&amp;#39;\000&amp;#39;&lt;/span> &lt;span style="color:#ff79c6">&amp;lt;&lt;/span>repeats &lt;span style="color:#bd93f9">15&lt;/span> times&lt;span style="color:#ff79c6">&amp;gt;&lt;/span>,
+_M_allocated_capacity &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">0x0&lt;/span>
 }
 }
-&lt;/code>&lt;/pre>&lt;p>BUT alas, that function actually just overwrites it so fuck that. So we must just rewrite where that _M_p pointer is and put the memory address of the UUID -&amp;gt; &lt;code>set *$9._M_dataplus._M_p = 0x555555da4e10&lt;/code>&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>BUT alas, that function actually just overwrites it so fuck that. So we must just rewrite where that _M_p pointer is and put the memory address of the UUID -&amp;gt; &lt;code>set *$9._M_dataplus._M_p = 0x555555da4e10&lt;/code>&lt;/p>
 &lt;p>Where does the UUID get used other than the above (elcftaqudeovx)?&lt;/p>
 &lt;p>&lt;code>string * coxclamjiqjlw(string *__return_storage_ptr__,string *uuid)&lt;/code>&lt;/p>
 &lt;p>Before we can call that function, it takes in a &lt;code>__return_storage_ptr__&lt;/code>. Then can do that&lt;/p>
-&lt;pre tabindex="0">&lt;code>gef➤ call (string *) malloc(sizeof(std::string))
-$10 = (std::string *) 0x555555da4db0
-&lt;/code>&lt;/pre>&lt;p>Calling the function was not fucking working, so I gotta edit the register and fuck with it.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c++" data-lang="c++">gef➤ call (string &lt;span style="color:#ff79c6">*&lt;/span>) malloc(&lt;span style="color:#ff79c6">sizeof&lt;/span>(std&lt;span style="color:#ff79c6">::&lt;/span>string))
+$&lt;span style="color:#bd93f9">10&lt;/span> &lt;span style="color:#ff79c6">=&lt;/span> (std&lt;span style="color:#ff79c6">::&lt;/span>string &lt;span style="color:#ff79c6">*&lt;/span>) &lt;span style="color:#bd93f9">0x555555da4db0&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Calling the function was not fucking working, so I gotta edit the register and fuck with it.&lt;/p>
 &lt;p>&lt;code>set $rbp-0x1a8 = 0x555555da4db0&lt;/code>&lt;/p>
 &lt;p>NOW, we can call the function again and hopefully get the freaking answer.&lt;/p>
 &lt;p>&lt;code>call (std::string *) (*0x5555555b2545(*0x555555da4db0,*0x555555da4e10))&lt;/code>&lt;/p>
@@ -412,15 +412,15 @@ $10 = (std::string *) 0x555555da4db0
 &lt;p>Alternatively, you can click on the function that is taking in that variable and see what the size is (like &lt;code>pnsikqtljaxba(&amp;amp;cmd_param,PARAM_CMD)&lt;/code>). You have to note down the size in order to correctly convert it to bytes and then back to a hex string/dump. We have to convert to bytes because that is what the program is doing to then send it to start the connection. We noticed this back when we saw how the UUID gets constructed. In the picture below, we see randombytes() so that tells us that there is a conversion of bytes.&lt;/p>
 &lt;p>&lt;img src="https://murphe22.com/content/posts/images/codebreaker/assigningUUID.png" alt="assigning uuid">&lt;/p>
 &lt;p>The parts that are sent are now defined below with the correct byte sizes.&lt;/p>
-&lt;pre tabindex="0">&lt;code>magic_start: 1553DC11
-cmd_param: 1700
-cmd_length: 0002
-cmd_data: 0002
-uuid_param: 1708
-uuid_length: 0010
-uuid: b'M\xa4h\xdb\x1d\xaaH\x1c\x9b\xe7\xd9\xfe\xeeB\xa46'
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">magic_start: &lt;span style="color:#bd93f9">1553&lt;/span>DC11
+cmd_param: &lt;span style="color:#bd93f9">1700&lt;/span>
+cmd_length: &lt;span style="color:#bd93f9">0002&lt;/span>
+cmd_data: &lt;span style="color:#bd93f9">0002&lt;/span>
+uuid_param: &lt;span style="color:#bd93f9">1708&lt;/span>
+uuid_length: &lt;span style="color:#bd93f9">0010&lt;/span>
+uuid: &lt;span style="color:#f1fa8c">b&lt;/span>&lt;span style="color:#f1fa8c">&amp;#39;M&lt;/span>&lt;span style="color:#f1fa8c">\xa4&lt;/span>&lt;span style="color:#f1fa8c">h&lt;/span>&lt;span style="color:#f1fa8c">\xdb\x1d\xaa&lt;/span>&lt;span style="color:#f1fa8c">H&lt;/span>&lt;span style="color:#f1fa8c">\x1c\x9b\xe7\xd9\xfe\xee&lt;/span>&lt;span style="color:#f1fa8c">B&lt;/span>&lt;span style="color:#f1fa8c">\xa4&lt;/span>&lt;span style="color:#f1fa8c">6&amp;#39;&lt;/span>
 magic_end: E38A5B8C
-&lt;/code>&lt;/pre>&lt;p>Then convert that to hex (in the convert.py script) and we get the hex dump :).&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then convert that to hex (in the convert.py script) and we get the hex dump :).&lt;/p>
 &lt;p>&lt;code>1553dc11170000020002170800104da468db1daa481c9be7d9feee42a436e38a5b8c&lt;/code>&lt;/p></description></item><item><title>MetaCTF 2021</title><link>https://murphe22.com/posts/metactf/</link><pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/metactf/</guid><description>&lt;p>Starting Friday, December 3rd, 2021, MetaCTF will host it&amp;rsquo;s 7th annual virtual jeopardy-style CTF! This event is free and open to everyone, and participants can compete in teams of up to 4.&lt;/p>
 &lt;p>This CTF will challenge participants of all skill levels to learn new cybersecurity techniques and skills, with problems covering a variety of topics such as web exploitation, cryptography, binary exploitation, reverse engineering, forensics, and reconnaissance.&lt;/p>
 &lt;h1 id="intro" >Intro
@@ -496,45 +496,45 @@ ty gdb v cool&lt;/p>
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>Scripting fun:&lt;/p>
-&lt;pre tabindex="0">&lt;code>import random
-def do_thing(a, b):
-return ((a &amp;lt;&amp;lt; 1) &amp;amp; b) ^ ((a &amp;lt;&amp;lt; 1) | b)
-def checkFlag(x, prevLen):
-random.seed(997)
-k = [random.randint(0, 256) for _ in range(len(x))]
-a = { b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k) }
-b = list(range(len(x)))
-random.shuffle(b)
-c = [a[i] for i in b[::-1]]
-# print(k)
-# print(c)
-kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
-valid = len(list(filter(lambda s: kn[s[0]] == s[1], enumerate(c))))
-# print(valid)
-if valid &amp;gt; prevLen:
-return True
-return False
-#random.seed(997)
-k = [random.randint(0, 256) for _ in range(25)]
-# print(k)
-#x = &amp;quot;A&amp;quot;*25
-# a = {b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k)}
-#kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
-# write a loop to go through all the possible ascii
-# values and do_thing it with all values in k
-currFlag = 'MetaCTF{'
-for i in range(25 - 8):
-for j in range(0, 128):
-nextFlag = currFlag + chr(j) + 'A'*(16-i)
-# print(&amp;quot;test&amp;quot;)
-print(nextFlag)
-assert(len(nextFlag) == 25)
-if checkFlag(nextFlag, len(currFlag)):
-# print(nextFlag)
-currFlag = currFlag + chr(j)
-break
-# print(currFlag)
-&lt;/code>&lt;/pre>&lt;p>&lt;code>MetaCTF{yOu_w!N_th1$_0n3}&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#ff79c6">import&lt;/span> random
+&lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">do_thing&lt;/span>(a, b):
+&lt;span style="color:#ff79c6">return&lt;/span> ((a &lt;span style="color:#ff79c6">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#bd93f9">1&lt;/span>) &lt;span style="color:#ff79c6">&amp;amp;&lt;/span> b) &lt;span style="color:#ff79c6">^&lt;/span> ((a &lt;span style="color:#ff79c6">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#bd93f9">1&lt;/span>) &lt;span style="color:#ff79c6">|&lt;/span> b)
+&lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">checkFlag&lt;/span>(x, prevLen):
+random&lt;span style="color:#ff79c6">.&lt;/span>seed(&lt;span style="color:#bd93f9">997&lt;/span>)
+k &lt;span style="color:#ff79c6">=&lt;/span> [random&lt;span style="color:#ff79c6">.&lt;/span>randint(&lt;span style="color:#bd93f9">0&lt;/span>, &lt;span style="color:#bd93f9">256&lt;/span>) &lt;span style="color:#ff79c6">for&lt;/span> _ &lt;span style="color:#ff79c6">in&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">range&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">len&lt;/span>(x))]
+a &lt;span style="color:#ff79c6">=&lt;/span> { b: do_thing(&lt;span style="color:#8be9fd;font-style:italic">ord&lt;/span>(c), d) &lt;span style="color:#ff79c6">for&lt;/span> (b, c), d &lt;span style="color:#ff79c6">in&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">zip&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">enumerate&lt;/span>(x), k) }
+b &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">list&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">range&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">len&lt;/span>(x)))
+random&lt;span style="color:#ff79c6">.&lt;/span>shuffle(b)
+c &lt;span style="color:#ff79c6">=&lt;/span> [a[i] &lt;span style="color:#ff79c6">for&lt;/span> i &lt;span style="color:#ff79c6">in&lt;/span> b[::&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">1&lt;/span>]]
+&lt;span style="color:#6272a4"># print(k)&lt;/span>
+&lt;span style="color:#6272a4"># print(c)&lt;/span>
+kn &lt;span style="color:#ff79c6">=&lt;/span> [&lt;span style="color:#bd93f9">47&lt;/span>, &lt;span style="color:#bd93f9">123&lt;/span>, &lt;span style="color:#bd93f9">113&lt;/span>, &lt;span style="color:#bd93f9">232&lt;/span>, &lt;span style="color:#bd93f9">118&lt;/span>, &lt;span style="color:#bd93f9">98&lt;/span>, &lt;span style="color:#bd93f9">183&lt;/span>, &lt;span style="color:#bd93f9">183&lt;/span>, &lt;span style="color:#bd93f9">77&lt;/span>, &lt;span style="color:#bd93f9">64&lt;/span>, &lt;span style="color:#bd93f9">218&lt;/span>, &lt;span style="color:#bd93f9">223&lt;/span>, &lt;span style="color:#bd93f9">232&lt;/span>, &lt;span style="color:#bd93f9">82&lt;/span>, &lt;span style="color:#bd93f9">16&lt;/span>, &lt;span style="color:#bd93f9">72&lt;/span>, &lt;span style="color:#bd93f9">68&lt;/span>, &lt;span style="color:#bd93f9">191&lt;/span>, &lt;span style="color:#bd93f9">54&lt;/span>, &lt;span style="color:#bd93f9">116&lt;/span>, &lt;span style="color:#bd93f9">38&lt;/span>, &lt;span style="color:#bd93f9">151&lt;/span>, &lt;span style="color:#bd93f9">174&lt;/span>, &lt;span style="color:#bd93f9">234&lt;/span>, &lt;span style="color:#bd93f9">127&lt;/span>]
+valid &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">len&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">list&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">filter&lt;/span>(&lt;span style="color:#ff79c6">lambda&lt;/span> s: kn[s[&lt;span style="color:#bd93f9">0&lt;/span>]] &lt;span style="color:#ff79c6">==&lt;/span> s[&lt;span style="color:#bd93f9">1&lt;/span>], &lt;span style="color:#8be9fd;font-style:italic">enumerate&lt;/span>(c))))
+&lt;span style="color:#6272a4"># print(valid)&lt;/span>
+&lt;span style="color:#ff79c6">if&lt;/span> valid &lt;span style="color:#ff79c6">&amp;gt;&lt;/span> prevLen:
+&lt;span style="color:#ff79c6">return&lt;/span> &lt;span style="color:#ff79c6">True&lt;/span>
+&lt;span style="color:#ff79c6">return&lt;/span> &lt;span style="color:#ff79c6">False&lt;/span>
+&lt;span style="color:#6272a4">#random.seed(997)&lt;/span>
+k &lt;span style="color:#ff79c6">=&lt;/span> [random&lt;span style="color:#ff79c6">.&lt;/span>randint(&lt;span style="color:#bd93f9">0&lt;/span>, &lt;span style="color:#bd93f9">256&lt;/span>) &lt;span style="color:#ff79c6">for&lt;/span> _ &lt;span style="color:#ff79c6">in&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">range&lt;/span>(&lt;span style="color:#bd93f9">25&lt;/span>)]
+&lt;span style="color:#6272a4"># print(k)&lt;/span>
+&lt;span style="color:#6272a4">#x = &amp;#34;A&amp;#34;*25&lt;/span>
+&lt;span style="color:#6272a4"># a = {b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k)}&lt;/span>
+&lt;span style="color:#6272a4">#kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]&lt;/span>
+&lt;span style="color:#6272a4"># write a loop to go through all the possible ascii &lt;/span>
+&lt;span style="color:#6272a4"># values and do_thing it with all values in k&lt;/span>
+currFlag &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#f1fa8c">&amp;#39;MetaCTF{&amp;#39;&lt;/span>
+&lt;span style="color:#ff79c6">for&lt;/span> i &lt;span style="color:#ff79c6">in&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">range&lt;/span>(&lt;span style="color:#bd93f9">25&lt;/span> &lt;span style="color:#ff79c6">-&lt;/span> &lt;span style="color:#bd93f9">8&lt;/span>):
+&lt;span style="color:#ff79c6">for&lt;/span> j &lt;span style="color:#ff79c6">in&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">range&lt;/span>(&lt;span style="color:#bd93f9">0&lt;/span>, &lt;span style="color:#bd93f9">128&lt;/span>):
+nextFlag &lt;span style="color:#ff79c6">=&lt;/span> currFlag &lt;span style="color:#ff79c6">+&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">chr&lt;/span>(j) &lt;span style="color:#ff79c6">+&lt;/span> &lt;span style="color:#f1fa8c">&amp;#39;A&amp;#39;&lt;/span>&lt;span style="color:#ff79c6">*&lt;/span>(&lt;span style="color:#bd93f9">16&lt;/span>&lt;span style="color:#ff79c6">-&lt;/span>i)
+&lt;span style="color:#6272a4"># print(&amp;#34;test&amp;#34;)&lt;/span>
+&lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(nextFlag)
+&lt;span style="color:#ff79c6">assert&lt;/span>(&lt;span style="color:#8be9fd;font-style:italic">len&lt;/span>(nextFlag) &lt;span style="color:#ff79c6">==&lt;/span> &lt;span style="color:#bd93f9">25&lt;/span>)
+&lt;span style="color:#ff79c6">if&lt;/span> checkFlag(nextFlag, &lt;span style="color:#8be9fd;font-style:italic">len&lt;/span>(currFlag)):
+&lt;span style="color:#6272a4"># print(nextFlag)&lt;/span>
+currFlag &lt;span style="color:#ff79c6">=&lt;/span> currFlag &lt;span style="color:#ff79c6">+&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">chr&lt;/span>(j)
+&lt;span style="color:#ff79c6">break&lt;/span>
+&lt;span style="color:#6272a4"># print(currFlag)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>MetaCTF{yOu_w!N_th1$_0n3}&lt;/code>&lt;/p>
 &lt;h1 id="interception-i" >Interception I
 &lt;span>
 &lt;a href="#interception-i">
@@ -589,9 +589,9 @@ ssh &lt;a href="mailto:ctf-46ed3559da08@host.cg21.metaproblems.com">ctf-46ed3559
 &lt;li>There are more hosts up, so let&amp;rsquo;s see what is open.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>nmap -p 8000 192.168.0.0/24 -v | grep open&lt;/code>&lt;/p>
-&lt;pre tabindex="0">&lt;code>Discovered open port 8000/tcp on 192.168.0.78
-8000/tcp open http-alt
-&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">Discovered &lt;span style="color:#8be9fd;font-style:italic">open&lt;/span> port &lt;span style="color:#bd93f9">8000&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>tcp on &lt;span style="color:#bd93f9">192.168.0.78&lt;/span>
+&lt;span style="color:#bd93f9">8000&lt;/span>&lt;span style="color:#ff79c6">/&lt;/span>tcp &lt;span style="color:#8be9fd;font-style:italic">open&lt;/span> http&lt;span style="color:#ff79c6">-&lt;/span>alt
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
 &lt;li>Ping to test connection.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>ping 192.168.0.78&lt;/code>&lt;/p>
@@ -599,8 +599,8 @@ ssh &lt;a href="mailto:ctf-46ed3559da08@host.cg21.metaproblems.com">ctf-46ed3559
 &lt;li>Check interface that we gotta change&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>arp -a&lt;/code>&lt;/p>
-&lt;pre tabindex="0">&lt;code>ip-192-168-0-78.ec2.internal (192.168.0.78) at 02:42:0a:00:a3:c3 [ether] on eth0
-&lt;/code>&lt;/pre>&lt;ol start="4">
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">ip&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">192&lt;/span>&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">168&lt;/span>&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">0&lt;/span>&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">78.&lt;/span>ec2&lt;span style="color:#ff79c6">.&lt;/span>internal (&lt;span style="color:#bd93f9">192.168.0.78&lt;/span>) at &lt;span style="color:#bd93f9">02&lt;/span>:&lt;span style="color:#bd93f9">42&lt;/span>:&lt;span style="color:#bd93f9">0&lt;/span>a:&lt;span style="color:#bd93f9">00&lt;/span>:a3:c3 [ether] on eth0
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
 &lt;li>Change the ip&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>ifconfig eth0 192.168.0.78 netmask 255.255.255.0&lt;/code>&lt;/p>
@@ -746,14 +746,14 @@ password: admin
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>Looking at the pcap -&amp;gt; notice the user agent (this is a good way to identify C2 frameworks).&lt;/p>
-&lt;pre tabindex="0">&lt;code>GET /en-us/docs.html HTTP/1.1
-User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
-Host: 52.44.115.131:8080
-Cookie: ASPSESSIONID=fc1060eace; SESSIONID=1552332971750
-HTTP/1.1 200 OK
-Date: Mon, 22 Nov 2021 01:33:24 GMT
-Content-Type: text/plain; charset=utf-8
-Server: Microsoft-IIS/7.5
-Transfer-Encoding: chunked
-&lt;/code>&lt;/pre>&lt;p>Google search on the SESSIONID: find &lt;a href="https://github.com/sclow/covenant_mgmt/blob/main/config.yml.example">GitHub&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">GET &lt;span style="color:#ff79c6">/&lt;/span>en&lt;span style="color:#ff79c6">-&lt;/span>us&lt;span style="color:#ff79c6">/&lt;/span>docs&lt;span style="color:#ff79c6">.&lt;/span>html HTTP&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">1.1&lt;/span>
+User&lt;span style="color:#ff79c6">-&lt;/span>Agent: Mozilla&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">5.0&lt;/span> (Windows NT &lt;span style="color:#bd93f9">6.1&lt;/span>) AppleWebKit&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">537.36&lt;/span> (KHTML, like Gecko) Chrome&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">41.0.2228.0&lt;/span> Safari&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">537.36&lt;/span>
+Host: &lt;span style="color:#bd93f9">52.44.115.131&lt;/span>:&lt;span style="color:#bd93f9">8080&lt;/span>
+Cookie: ASPSESSIONID&lt;span style="color:#ff79c6">=&lt;/span>fc1060eace; SESSIONID&lt;span style="color:#ff79c6">=&lt;/span>&lt;span style="color:#bd93f9">1552332971750&lt;/span>
+HTTP&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">1.1&lt;/span> &lt;span style="color:#bd93f9">200&lt;/span> OK
+Date: Mon, &lt;span style="color:#bd93f9">22&lt;/span> Nov &lt;span style="color:#bd93f9">2021&lt;/span> &lt;span style="color:#bd93f9">01&lt;/span>:&lt;span style="color:#bd93f9">33&lt;/span>:&lt;span style="color:#bd93f9">24&lt;/span> GMT
+Content&lt;span style="color:#ff79c6">-&lt;/span>Type: text&lt;span style="color:#ff79c6">/&lt;/span>plain; charset&lt;span style="color:#ff79c6">=&lt;/span>utf&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">8&lt;/span>
+Server: Microsoft&lt;span style="color:#ff79c6">-&lt;/span>IIS&lt;span style="color:#ff79c6">/&lt;/span>&lt;span style="color:#bd93f9">7.5&lt;/span>
+Transfer&lt;span style="color:#ff79c6">-&lt;/span>Encoding: chunked
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Google search on the SESSIONID: find &lt;a href="https://github.com/sclow/covenant_mgmt/blob/main/config.yml.example">GitHub&lt;/a>&lt;/p>
 &lt;p>&lt;code>MetaCTF{Covenant}&lt;/code>&lt;/p></description></item></channel></rss>
