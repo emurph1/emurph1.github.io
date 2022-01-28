@@ -333,4 +333,3 @@ Google search on the SESSIONID: find [GitHub](https://github.com/sclow/covenant_
 `MetaCTF{Covenant}`
 
 
-
