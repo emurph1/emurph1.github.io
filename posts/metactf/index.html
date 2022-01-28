@@ -1,0 +1,435 @@
+<!doctype html><html lang=en-us data-theme>
+<head>
+<meta charset=utf-8>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=referrer content="no-referrer-when-downgrade">
+<title>MetaCTF 2021 - murphe22</title>
+<meta name=description content="Lorem Ipsum Dolor Si Amet">
+<link rel=icon type=image/x-icon href=https://murphe22.com/favicon.ico>
+<link rel=apple-touch-icon-precomposed href=https://murphe22.com/favicon.png>
+<link rel=stylesheet href=https://murphe22.com/css/style.min.2e66364f1a1eacf38538950d01054f91334df1cdfb322b31600f6b0f3a473a6a.css integrity="sha256-LmY2TxoerPOFOJUNAQVPkTNN8c37MisxYA9rDzpHOmo=">
+<script src=https://murphe22.com/js/script.min.510c781c39dbb21b4c76d85c82e2bdf4689220adbb7cd61e49e9d293e442fb42.js type=text/javascript integrity="sha256-UQx4HDnbshtMdthcguK99GiSIK27fNYeSenSk+RC+0I="></script>
+<meta property="og:title" content="MetaCTF 2021">
+<meta property="og:description" content="Lorem Ipsum Dolor Si Amet">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://murphe22.com/posts/metactf/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-03T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-12-03T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="MetaCTF 2021">
+<meta name=twitter:description content="Lorem Ipsum Dolor Si Amet">
+</head>
+<body>
+<a class=skip-main href=#main>Skip to main content</a>
+<div class=container>
+<header class=common-header>
+<div class=header-top>
+<h1 class=site-title>
+<a href=/>murphe22</a>
+</h1>
+<ul class=social-icons>
+<li>
+<a href=https://www.linkedin.com/in/murphe22/ title=Linkedin rel=me>
+<span class=inline-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentcolor" d="M416 32H31.9C14.3 32 0 46.5.0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6.0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3.0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2.0 38.5 17.3 38.5 38.5.0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6.0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2.0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span>
+</a>
+</li>
+<li>
+<a href=https://github.com/emurph1 title=Github rel=me>
+<span class=inline-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentcolor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span>
+</a>
+</li>
+<li>
+<a href=/index.xml title=RSS rel=me>
+<span class=inline-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentcolor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328.0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765.0 183.105.0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686.0 38.981.0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+</span>
+</a>
+</li>
+</ul>
+</div>
+<nav>
+<a href=https://murphe22.com/about/ title>About</a>
+<a href=https://murphe22.com/posts/ title>Writeups</a>
+<a href=https://murphe22.com/contact/ title>Contact</a>
+<a href=https://murphe22.com/tags/ title>Tags</a>
+</nav>
+</header>
+<main id=main tabindex=-1>
+<article class="post h-entry">
+<div class=post-header>
+<header>
+<h1 class="p-name post-title">MetaCTF 2021</h1>
+</header>
+</div>
+<div class="content e-content">
+<p>Starting Friday, December 3rd, 2021, MetaCTF will host it&rsquo;s 7th annual virtual jeopardy-style CTF! This event is free and open to everyone, and participants can compete in teams of up to 4.</p>
+<p>This CTF will challenge participants of all skill levels to learn new cybersecurity techniques and skills, with problems covering a variety of topics such as web exploitation, cryptography, binary exploitation, reverse engineering, forensics, and reconnaissance.</p>
+<h1 id=intro>Intro
+<span>
+<a href=#intro><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>This CTF was the first time our club has participated and it was an absolute blast. Thank you to my awesome team members (Rohan, Lane, and Bode)!!! We placed 58th overall and 25th amongst student teams!</p>
+<h1 id=darryl-vault>Darryl Vault
+<span>
+<a href=#darryl-vault><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>Dread Pirate Darryl has no qualms with a little bit - or a lot - of thievery, as you recently found out to your detriment. Suffice it to say his loot stash has grown quite a bit, and you find yourself down a whole bunch of valuables. This is, put simply, unacceptable. You need to rectify this situation, and returning the favor ought to do the trick.</p>
+<p>As a Dread Pirate, Dread Pirate Darryl has much better things to do than remembering all of his secrets, such as raiding other innocent CTF-goers or shouting &ldquo;ARRRRR&rdquo; at the top of his lungs repeatedly. Darryl commissioned a secret vault program to be written for him so that when he needs to take newly acquired loot back to his lair, he can ask it where he has to go.</p>
+<p>Unfortunately for Dread Pirate Darryl, the developer from whom he commissioned the vault was very proud of his work and wanted to show it off, and we here at MetaCTF have acquired a copy of it. Find Dread Pirate Darryl&rsquo;s treasures! Enact your revenge!</p>
+<p>Note: The flag is the password used to access the location of Dread Pirate Darryl&rsquo;s treasure.</p>
+<h2 id=solve>Solve
+<span>
+<a href=#solve><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>First, i just ran the file to see what was going on and saw that there were four different options.
+I went to ghidra, looked at the entry, got the first argument of libc start main and renamed main
+Rebase Ghidra
+Break main and look at what it’s doing
+We have four possible inputs, right?
+1, 2 3, 4</p>
+<p>Mother’s maiden name does not prompt for a password</p>
+<p>The password for 2&3 is just chilling in strings DARRYL_IS_THE_GREATEST</p>
+<p>4 asks for a password, but it doesnt output anything else. Hmmmmmmmmmmmm 👀</p>
+<p>Essentially, the password is checked on three separate occasions
+We return to ghidra. Defined strings go burrrrr. “Hey, Darryl, I&rsquo;m going to need your password” has three functions nearby it. Three???? hmmmmmmmmmmmmmmm</p>
+<p><img src=/content/posts/images/metactf/message.png alt=idek></p>
+<p>Why dont we click on those functions 👀</p>
+<p>Oh cool that last one looks sexy</p>
+<p>This is where i found the function i named funcwithtoomanynums. U will know it when u see it</p>
+<p>Inside that, the memcmp 0x27 goooo burrrrrr</p>
+<p>Let’s just fuck around in gdb and break at this memcmp with ‘aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa’ bc its len is 0x27</p>
+<p>Gdb go burrrrrr
+ty gdb v cool</p>
+<p><img src=/content/posts/images/metactf/flag.png alt="flag in memory"></p>
+<h1 id=easy-as-it-is>Easy as it is
+<span>
+<a href=#easy-as-it-is><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>Caleb was designing a problem for MetaCTF where the flag would be in the telnet plaintext. Unfortunately, he accidentally stopped the packet capture right before the flag was supposed to be revealed. Can you still find the flag? Note: You&rsquo;ll need to decrypt in CyberChef rather than using a command line utility.</p>
+<h2 id=solve-1>Solve
+<span>
+<a href=#solve-1><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Get the PGP message and private key from the pcap. Put it in CyberChef and notice it is still messed up. So, mess around with the decrompression and find that <code>gzip</code> works.</p>
+<p><img src=/content/posts/images/metactf/cyberChef.png alt=cyberchef></p>
+<p><code>MetaCTF{cleartext_private_pgp_keys}</code></p>
+<h1 id=i-hate-python>I Hate Python
+<span>
+<a href=#i-hate-python><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>I hate Python, and now you will too. Find the password.</p>
+<h2 id=solve-2>Solve
+<span>
+<a href=#solve-2><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Scripting fun:</p>
+<pre tabindex=0><code>import random
+
+def do_thing(a, b):
+    return ((a &lt;&lt; 1) &amp; b) ^ ((a &lt;&lt; 1) | b)
+
+def checkFlag(x, prevLen):
+    random.seed(997)
+    k = [random.randint(0, 256) for _ in range(len(x))]
+    a = { b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k) }
+    b = list(range(len(x)))
+    random.shuffle(b)
+    c = [a[i] for i in b[::-1]]
+    # print(k)
+    # print(c)
+    kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
+    valid = len(list(filter(lambda s: kn[s[0]] == s[1], enumerate(c))))
+    # print(valid)
+    if valid &gt; prevLen:
+        return True
+    return False
+
+#random.seed(997)
+
+k = [random.randint(0, 256) for _ in range(25)]
+# print(k)
+
+#x = &quot;A&quot;*25
+
+# a = {b: do_thing(ord(c), d) for (b, c), d in zip(enumerate(x), k)}
+
+#kn = [47, 123, 113, 232, 118, 98, 183, 183, 77, 64, 218, 223, 232, 82, 16, 72, 68, 191, 54, 116, 38, 151, 174, 234, 127]
+
+# write a loop to go through all the possible ascii 
+# values and do_thing it with all values in k
+
+currFlag = 'MetaCTF{'
+
+for i in range(25 - 8):
+    for j in range(0, 128):
+        nextFlag = currFlag + chr(j) + 'A'*(16-i)
+        # print(&quot;test&quot;)
+        print(nextFlag)
+        assert(len(nextFlag) == 25)
+        if checkFlag(nextFlag, len(currFlag)):
+            # print(nextFlag)
+            currFlag = currFlag + chr(j)
+            break
+
+# print(currFlag)
+</code></pre><p><code>MetaCTF{yOu_w!N_th1$_0n3}</code></p>
+<h1 id=interception-i>Interception I
+<span>
+<a href=#interception-i><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>192.168.0.1 is periodically (once every 4 seconds) sending the flag to 192.168.0.2 over UDP port 8000. Go get it.
+ssh <a href=mailto:ctf-1@host.cg21.metaproblems.com>ctf-1@host.cg21.metaproblems.com</a> -p 7000</p>
+<p>If you get an SSH host key error, consider using
+ssh -o &ldquo;UserKnownHostsFile=/dev/null&rdquo; -o &ldquo;StrictHostKeyChecking=no&rdquo; <a href=mailto:ctf-1@host.cg21.metaproblems.com>ctf-1@host.cg21.metaproblems.com</a> -p 7000</p>
+<p>Note that the connection can take a while to initialize. It will say Granting console connection to device&mldr; and then three dots will appear. After the third dot you should have a connection.</p>
+<h2 id=solve-note-i-did-this-at-2-am>Solve (Note I did this at 2 AM)
+<span>
+<a href=#solve-note-i-did-this-at-2-am><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Gotta do some ip spoofing.</p>
+<ol>
+<li>first changed ip address to spoofy</li>
+</ol>
+<p><code>ifconfig eth0 192.168.0.2 netmask 255.255.255.0</code></p>
+<ol start=2>
+<li>then do a lil ping to test connection and refresh arp cache so we changed the ip address</li>
+</ol>
+<p><code>ping 192.168.0.1</code></p>
+<ol start=3>
+<li>then do a lil nmap mappy</li>
+</ol>
+<p><code>nmap -sn -PU 192.168.0.0/24</code></p>
+<ol start=4>
+<li>then do a lil net catty cat</li>
+</ol>
+<p><code>nc -lu 192.168.0.2 8000</code></p>
+<p><code>MetaCTF{addr3s5_r3s0lut1on_pwn4g3}</code></p>
+<h1 id=interception-ii>Interception II
+<span>
+<a href=#interception-ii><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>Someone on this network is periodically sending the flag to &mldr; someone else on this network, over TCP port 8000. Go get it.
+ssh <a href=mailto:ctf-46ed3559da08@host.cg21.metaproblems.com>ctf-46ed3559da08@host.cg21.metaproblems.com</a> -p 7000</p>
+<h2 id=solve-3>Solve
+<span>
+<a href=#solve-3><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Similar process to Interception I.</p>
+<ol>
+<li>There are more hosts up, so let&rsquo;s see what is open.</li>
+</ol>
+<p><code>nmap -p 8000 192.168.0.0/24 -v | grep open</code></p>
+<pre tabindex=0><code>Discovered open port 8000/tcp on 192.168.0.78
+8000/tcp open http-alt
+</code></pre><ol start=2>
+<li>Ping to test connection.</li>
+</ol>
+<p><code>ping 192.168.0.78</code></p>
+<ol start=3>
+<li>Check interface that we gotta change</li>
+</ol>
+<p><code>arp -a</code></p>
+<pre tabindex=0><code>ip-192-168-0-78.ec2.internal (192.168.0.78) at 02:42:0a:00:a3:c3 [ether] on eth0
+</code></pre><ol start=4>
+<li>Change the ip</li>
+</ol>
+<p><code>ifconfig eth0 192.168.0.78 netmask 255.255.255.0</code></p>
+<ol start=5>
+<li>
+<p><code>ping 192.168.0.78</code> to refresh the arp cache so it does the spoofy</p>
+</li>
+<li>
+<p>Setup the netcat connection</p>
+</li>
+</ol>
+<p><code>nc -lvp 8000</code></p>
+<p><code>MetaCTF{s0_m4ny_1ps_but_wh1ch_t0_ch00s3}</code></p>
+<h1 id=interception-iii>Interception III
+<span>
+<a href=#interception-iii><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>192.168.55.3 is periodically sending the flag to 172.16.0.2 over UDP port 8000. Go get it.
+By the way, I&rsquo;ve been told the admins at this organization use really shoddy passwords.
+ssh <a href=mailto:ctf-f36ef72cadc1@host.cg21.metaproblems.com>ctf-f36ef72cadc1@host.cg21.metaproblems.com</a> -p 7000
+Note: The password for this user is the flag from Interception I. You must finish Interception I before starting this challenge.</p>
+<h2 id=solve-4>Solve
+<span>
+<a href=#solve-4><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>First enumerate&mldr;. <code>nmap -v 192.168.0.0/24</code></p>
+<p><img src=/content/posts/images/metactf/I3scan.png alt="nmap scan"></p>
+<p>So&mldr; telnet means we can connect to smtn&mldr; we know it is a router bc usually default gateways have an end address of &lt;0-9>.&lt;0-9>.&lt;0-9>.<strong>1</strong></p>
+<p>Gotta identify the router</p>
+<p><code>nmap -O 192.168.0.1</code></p>
+<pre tabindex=0><code>Starting Nmap 7.92 ( https://nmap.org ) at 2021-12-05 08:57 UTC
+Nmap scan report for ip-192-168-0-1.ec2.internal (192.168.0.1)
+Host is up (0.000077s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+23/tcp open  telnet
+MAC Address: 02:42:0A:00:0F:42 (Unknown)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.6
+Network Distance: 1 hop
+</code></pre><p>Important: <strong>Linux 4.15-5.6</strong></p>
+<p>google search: routers that use Linux 4.15 - 5.6 -> TP-Link</p>
+<p>Find root login -> <a href=https://www.cleancss.com/router-default/TP-Link>TP Link Default Creds</a></p>
+<pre tabindex=0><code>username: root
+password: admin
+</code></pre><p>When you get access, and do an <code>ls</code>, find bird-2.0.8 ->
+<a href=https://blog.kintone.io/entry/bird>https://blog.kintone.io/entry/bird</a> and <a href="https://bird.network.cz/?get_doc&f=bird-4.html">https://bird.network.cz/?get_doc&f=bird-4.html</a></p>
+<p>Did not solve, but was ON THE RIGHT TRACK. At 4AM, I tried changing the OSPF cost BUT I CHANGED THE WRONG INTERFACE&rsquo;S COST. BIG SAD.</p>
+<p>Here is the writeup from another person&mldr; for next time.</p>
+<p><img src=/content/posts/images/metactf/birdShit.png alt=solve></p>
+<h1 id=where-in-the-world>Where in the World
+<span>
+<a href=#where-in-the-world><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>I must say, every time I see one of these directional signs, I think I&rsquo;ve got to make this into a CTF problem. It&rsquo;s the idea of Open Source Intelligence (OSINT) or Geospatial Intelligence (GEOINT). The idea of being able to take an image and use all of the clues within it to infer details such as where it&rsquo;s at or what&rsquo;s happening in the photo.</p>
+<p>Here is one such picture of those signs. Your goal? Use those little details to find the name of the marina it&rsquo;s at which you&rsquo;ll submit for the flag (so MetaCTF{name of marina}</p>
+<p><img src=/content/posts/images/metactf/sign_of_cities.png alt=picture></p>
+<h2 id=solve-5>Solve
+<span>
+<a href=#solve-5><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Google image search go brrrr.</p>
+<p><a href="https://www.google.com/search?tbs=simg:CAESYgm4egF4qbenjhpXCxCwjKcIGjsKOQgEEhSLHvcB1A2jDM8esSSJJsYRqS2wGhobsSNyV5t0GyxbYWZWX4cdF4DSw67Sa_1SydHZ0IAUwBAwLEI6u_1ggaCgoICAESBAXC5ToM&q=marina+&tbm=isch#imgrc=lI4Z2r9ahay2oM">Search</a></p>
+<p><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FEgg-Harbor-Marina-Beach-206274509466545%2F&psig=AOvVaw19faRmXpPwUl5JjE_6oYTM&ust=1638681451821000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCJCsmqGyyfQCFQAAAAAdAAAAABAD">Egg Harbor</a></p>
+<p><code>MetaCTF(egg_harbor)</code></p>
+<h1 id=yummy-vegetables>Yummy Vegetables
+<span>
+<a href=#yummy-vegetables><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>I love me my vegetables, but I can never remember what color they are! I know lots of people have this problem, so I made a site to help.</p>
+<p>Here&rsquo;s some sauce to go with the vegetables: index.js</p>
+<h2 id=solve-6>Solve
+<span>
+<a href=#solve-6><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Looking at the JS, we see that a query is sent so you can do a UNION attack on this boi.</p>
+<p>Make sure you have the same number of columns as the first query though.</p>
+<p>To find the number of columns, look at the response after submitting a query (we can just do a empty search).</p>
+<p><code>UNION SELECT 1, 2, flag FROM the_flag_is_in_here_730387f4b640c398a3d769a39f9cf9b5;--1</code></p>
+<p><code>MetaCTF{sql1t3_m4st3r_0r_just_gu3ss_g0d??}</code></p>
+<h1 id=the-best-laid-plain>The Best Laid Plain
+<span>
+<a href=#the-best-laid-plain><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>Sometimes, routers can break packets up into fragments to meet abnormal networking requirements, and the endpoint will be responsible for putting these back together. Sometimes however, this doesn&rsquo;t go as planned, as Microsoft found out with CVE-2021-24074. We&rsquo;d like to see the function responsible for this vulnerability, but we&rsquo;re having some trouble finding its name&mldr; Could you see if you could find it?</p>
+<h2 id=solve-7>Solve
+<span>
+<a href=#solve-7><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p><a href="https://duckduckgo.com/?q=%22CVE-2021-24074%22+writeup&t=ffab&ia=web">https://duckduckgo.com/?q=%22CVE-2021-24074%22+writeup&t=ffab&ia=web</a></p>
+<p><a href=https://www.armis.com/blog/from-urgent11-to-frag44-microsoft-patches-critical-vulnerabilities-in-windows-tcpip-stack/>https://www.armis.com/blog/from-urgent11-to-frag44-microsoft-patches-critical-vulnerabilities-in-windows-tcpip-stack/</a></p>
+<p><code>MetaCTF{Ipv4pReceiveRoutingHeader}</code></p>
+<h1 id=pattern-of-life>Pattern of Life
+<span>
+<a href=#pattern-of-life><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>Hackers have breached our network. We know they are there, hiding in the shadows as users continue to browse the web like normal. As a threat hunter, your job is to constantly be searching our environment for any signs of malicious behavior.</p>
+<p>Today you just received a packet capture (pcap) from a user&rsquo;s workstation. We think that an attacker may have compromised the user&rsquo;s machine and that the computer is beaconing out to their command and control (C2) server. Based on some other logs, we also think the attacker was <em>not</em> using a fully encrypted protocol and also did not put much care into making their C2 server look like a normal website. Your task? We&rsquo;d like you to submit the port number that the C2 server is listening on in the form of MetaCTF{portnumber} as the flag.</p>
+<h2 id=solve-8>Solve
+<span>
+<a href=#solve-8><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>So from the prompt, we know we should look at HTTP(S) things. HTTP Command and Control beaconing is a thing.</p>
+<ol>
+<li>Look at the HTTP Objects: File -> Export Objects -> HTTP Objects</li>
+<li>Notice the port is 8080</li>
+</ol>
+<p><code>MetaCTF{8080}</code></p>
+<h1 id=the-searcher>The Searcher
+<span>
+<a href=#the-searcher><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h1><p>Alright analyst. We need your help with some investigative work as we dive deeper into one of the infections on our company&rsquo;s network. We&rsquo;ve taken a small packet capture that we know contains some C2 traffic. In order to give us some more leads for the investigation though, we&rsquo;d like to see if we can identify what C2 framework the attacker was using. This will give us some leads into potential host-based artifacts that might be left behind.</p>
+<p>Please submit the name of the C2 Framework being used in the form of MetaCTF{c2frameworkname}</p>
+<h2 id=solve-9>Solve
+<span>
+<a href=#solve-9><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+</a>
+</span>
+</h2><p>Looking at the pcap -> notice the user agent (this is a good way to identify C2 frameworks).</p>
+<pre tabindex=0><code>GET /en-us/docs.html HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+Host: 52.44.115.131:8080
+Cookie: ASPSESSIONID=fc1060eace; SESSIONID=1552332971750
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Nov 2021 01:33:24 GMT
+Content-Type: text/plain; charset=utf-8
+Server: Microsoft-IIS/7.5
+Transfer-Encoding: chunked
+</code></pre><p>Google search on the SESSIONID: find <a href=https://github.com/sclow/covenant_mgmt/blob/main/config.yml.example>GitHub</a></p>
+<p><code>MetaCTF{Covenant}</code></p>
+</div>
+<div class=post-info>
+<div class="post-date dt-published">2021-12-03</div>
+<a class="post-hidden-url u-url" href=https://murphe22.com/posts/metactf/>https://murphe22.com/posts/metactf/</a>
+<a href=https://murphe22.com class="p-name p-author post-hidden-author h-card" rel=me>Emily Murphy</a>
+<div class=post-taxonomies>
+<ul class=post-categories>
+<li><a href=https://murphe22.com/categories/writeups/>writeups</a></li>
+</ul>
+<ul class=post-tags>
+<li><a href=https://murphe22.com/tags/ctfs/>#ctfs</a></li>
+<li><a href=https://murphe22.com/tags/writeups/>#writeups</a></li>
+</ul>
+</div>
+</div>
+</article>
+<div class="pagination post-pagination">
+<div class="left pagination-item">
+<a href=/posts/nsacodebreaker/>NSA Codebreakers 2021</a>
+</div>
+<div class="right pagination-item">
+<a href=/posts/math-typesetting/>Math Typesetting</a>
+</div>
+</div>
+</main>
+<footer class=common-footer>
+<div class=common-footer-bottom>
+<div class=copyright>
+<p>© Emily Murphy, 2022<br>
+Powered by <a target=_blank rel="noopener noreferrer" href=https://gohugo.io/>Hugo</a>, theme <a target=_blank rel="noopener noreferrer" href=https://github.com/mitrichius/hugo-theme-anubis>Anubis</a>.<br>
+</p>
+</div>
+<button class=theme-switcher>
+Dark theme
+</button>
+<script>const STORAGE_KEY='user-color-scheme',defaultTheme="dark";let currentTheme,switchButton,autoDefinedScheme=window.matchMedia('(prefers-color-scheme: dark)');const autoChangeScheme=a=>{currentTheme=a.matches?'dark':'light',document.documentElement.setAttribute('data-theme',currentTheme),changeButtonText()};document.addEventListener('DOMContentLoaded',function(){switchButton=document.querySelector('.theme-switcher'),currentTheme=detectCurrentScheme(),currentTheme=='dark'&&document.documentElement.setAttribute('data-theme','dark'),currentTheme=='auto'&&(autoChangeScheme(autoDefinedScheme),autoDefinedScheme.addListener(autoChangeScheme)),changeButtonText(),switchButton.addEventListener('click',switchTheme,!1)});function detectCurrentScheme(){return localStorage.getItem(STORAGE_KEY)?localStorage.getItem(STORAGE_KEY):defaultTheme?defaultTheme:window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light':'light'}function changeButtonText(){switchButton.textContent=currentTheme=='dark'?"Light theme":"Dark theme"}function switchTheme(a){currentTheme=='dark'?(localStorage.setItem(STORAGE_KEY,'light'),document.documentElement.setAttribute('data-theme','light'),currentTheme='light'):(localStorage.setItem(STORAGE_KEY,'dark'),document.documentElement.setAttribute('data-theme','dark'),currentTheme='dark'),changeButtonText()}</script>
+</div>
+<p class="h-card vcard">
+<a href=https://murphe22.com class="p-name u-url url fn" rel=me>Emily Murphy</a>
+</p>
+</footer>
+</div>
+</body>
+</html>
