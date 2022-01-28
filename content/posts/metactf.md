@@ -69,14 +69,14 @@ Get the PGP message and private key from the pcap. Put it in CyberChef and notic
 
 ![cyberchef](/content/posts/images/metactf/cyberChef.png)
 
-```MetaCTF{cleartext_private_pgp_keys}```
+`MetaCTF{cleartext_private_pgp_keys}`
 
 # I Hate Python
 I hate Python, and now you will too. Find the password.
 
 ## Solve
 Scripting fun:
-```
+```python
 import random
 
 def do_thing(a, b):
@@ -171,7 +171,7 @@ Similar process to Interception I.
 
 `nmap -p 8000 192.168.0.0/24 -v | grep open`
 
-```
+```python
 Discovered open port 8000/tcp on 192.168.0.78
 8000/tcp open http-alt
 ```
@@ -184,7 +184,7 @@ Discovered open port 8000/tcp on 192.168.0.78
 
 `arp -a`
 
-```
+```python
 ip-192-168-0-78.ec2.internal (192.168.0.78) at 02:42:0a:00:a3:c3 [ether] on eth0
 ```
 
@@ -315,7 +315,7 @@ Please submit the name of the C2 Framework being used in the form of MetaCTF{c2f
 ## Solve 
 Looking at the pcap -> notice the user agent (this is a good way to identify C2 frameworks).
 
-```
+```python
 GET /en-us/docs.html HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
 Host: 52.44.115.131:8080

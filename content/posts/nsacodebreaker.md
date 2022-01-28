@@ -49,7 +49,7 @@ Downloads:
 ## Alternate way to solve
 1. go into vim -> visual block mode to add the filter
 
-    ```
+    ```python
     ip.src==198.18.152.0/23
     || ip.src==10.226.176.0/21
     || ip.src==192.168.20.128/25
@@ -99,7 +99,7 @@ Downloads:
 
     `grep 10.120.14.143 proxy.log`
 
-    ```
+    ```python
     2021-03-16 08:34:49 40 10.210.95.77 200 TCP_MISS 12734 479 GET http xomtq.invalid analysis - - DIRECT **10.120.14.143** application/octet-stream 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' PROXIED none - 10.210.94.189 SG-HTTP-Service - none -
     ```
 
@@ -109,7 +109,7 @@ Downloads:
 
 3. Create a Python script to parse through the JSON data to find the logons and log offs and see which LogonIds are associated with the time found from step 1
 
-    ```
+    ```python
     0X339534
     0X339757
     0X33946D
@@ -127,7 +127,7 @@ Downloads:
 
     `grep "0X339534\|0X339757\|0X33946D\|0X339870\|0X339989\|0X339A8A" narrowed.json | grep "10.210.95.77"`
 
-    ```
+    ```javascript
     {"PayloadData1": "Target: OOPS.NET\\chambers.jennifer", "PayloadData2": "LogonType 3", "PayloadData3": "LogonId: 0X33946D", "UserName": "-\\-", "RemoteHost": "- (10.210.95.77)", "ExecutableInfo": "-", "MapDescription": "Successful logon", "ChunkNumber": 0, "Computer": "OOPS-DC.oops.net", "Payload": "{\"EventData\": {\"Data\": [{\"@Name\": \"SubjectUserSid\", \"#text\": \"S-1-0-0\"}, {\"@Name\": \"SubjectUserName\", \"#text\": \"-\"}, {\"@Name\": \"SubjectDomainName\", \"#text\": \"-\"}, {\"@Name\": \"SubjectLogonId\", \"#text\": \"0x0\"}, {\"@Name\": \"TargetUserSid\", \"#text\": \"S-1-5-21-3521346-774097835-5683131894-1126\"}, {\"@Name\": \"TargetUserName\", \"#text\": \"chambers.jennifer\"}, {\"@Name\": \"TargetDomainName\", \"#text\": \"OOPS.NET\"}, {\"@Name\": \"TargetLogonId\", \"#text\": \"0X33946D\"}, {\"@Name\": \"LogonType\", \"#text\": \"3\"}, {\"@Name\": \"LogonProcessName\", \"#text\": \"Kerberos\"}, {\"@Name\": \"AuthenticationPackageName\", \"#text\": \"Kerberos\"}, {\"@Name\": \"WorkstationName\", \"#text\": \"-\"}, {\"@Name\": \"LogonGuid\", \"#text\": \"c5dfa92b-9ee6-4b7b-9029-207959f780e7\"}, {\"@Name\": \"TransmittedServices\", \"#text\": \"-\"}, {\"@Name\": \"LmPackageName\", \"#text\": \"-\"}, {\"@Name\": \"KeyLength\", \"#text\": \"0\"}, {\"@Name\": \"ProcessId\", \"#text\": \"0x0\"}, {\"@Name\": \"ProcessName\", \"#text\": \"-\"}, {\"@Name\": \"IpAddress\", \"#text\": \"10.210.95.77\"}, {\"@Name\": \"IpPort\", \"#text\": \"39845\"}, {\"@Name\": \"ImpersonationLevel\", \"#text\": \"%%1833\"}, {\"@Name\": \"RestrictedAdminMode\", \"#text\": \"-\"}, {\"@Name\": \"TargetOutboundUserName\", \"#text\": \"-\"}, {\"@Name\": \"TargetOutboundDomainName\", \"#text\": \"-\"}, {\"@Name\": \"VirtualAccount\", \"#text\": \"%%1843\"}, {\"@Name\": \"TargetLinkedLogonId\", \"#text\": \"0x0\"}, {\"@Name\": \"ElevatedToken\", \"#text\": \"%%1842\"}]}}", "Channel": "Security", "Provider": "Microsoft-Windows-Security-Auditing", "EventId": 4624, "EventRecordId": "5378", "ProcessId": 693, "ThreadId": 5958, "Level": "LogAlways", "Keywords": "Audit success", "SourceFile": "C:\\Windows\\system32\\winevt\\Logs\\Security.evtx", "ExtraDataOffset": 0, "HiddenRecord": false, "TimeCreated": "2021-03-16T12:09:22.6771601+00:00", "RecordNumber": "5378"}
 
     ```
@@ -281,7 +281,7 @@ Downloads:
 ## Solution
 Gotta allocate memory for the string.
 
-```
+```c++
 gef➤ call (string *) malloc(sizeof(std::string))
 $3 = (std::string *) 0x555555da4e10
 gef➤ call ((std::string*)0x555555da4e10)->basic_string()
@@ -305,7 +305,7 @@ $4 = (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<ch
 
 Now we can call the function that allocates it with the UUID...
 
-```
+```c++
 gef➤ call elcftaqudeovx(*(const std::string*)0x555555da4e10,0x10)
 $9 = {
   static npos = 0xffffffffffffffff,
@@ -331,7 +331,7 @@ Where does the UUID get used other than the above (elcftaqudeovx)?
 
 Before we can call that function, it takes in a `__return_storage_ptr__`. Then can do that
 
-```
+```c++
 gef➤ call (string *) malloc(sizeof(std::string))
 $10 = (std::string *) 0x555555da4db0
 ```
@@ -358,7 +358,7 @@ Alternatively, you can click on the function that is taking in that variable and
 ![assigning uuid](/content/posts/images/codebreaker/assigningUUID.png)
 
 The parts that are sent are now defined below with the correct byte sizes.
-```
+```python
 magic_start: 1553DC11
 cmd_param: 1700
 cmd_length: 0002

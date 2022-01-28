@@ -515,7 +515,7 @@ article figcaption {
 .divider {
     border-top: thin solid var(--hr-color);
     display: block;
-    height: 1px;
+    height: 0.5px;
     border: 0;
     width: 25%;
     margin: 1em auto;

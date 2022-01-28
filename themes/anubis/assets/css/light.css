@@ -1,28 +1,28 @@
 :root {
    /* light.css */ 
-    --font-color: rgb(0, 0, 0);
-    --bg-color: rgb(80, 153, 248);
+    --font-color: #000000;
+    --bg-color: #b6ccfe;
 
     --link-color:#1d60a3;
-    --link-state-color:#a31d1d;
+    --link-state-color:#b21e35;
     --link-state-border-color: rgba(163, 29, 29, .5);
 
     --thead-bg-color: lightgrey;
     --table-border-color: lightgrey;
 
-    --nav-bg-color: #fafafa;
-    --nav-link-color: #696969;
+    --nav-bg-color: #d7e3fc;
+    --nav-link-color: #f1eded;
 
     --pre-color: #333;
-    --pre-bg-color: #f1f1f1;
+    --pre-bg-color: #99e2b4;
 
     --bq-color: #ccc;
-    --hr-color: #ccc;
+    /* --hr-color: #ccc; */
 
     --pagination-bg-color: #fafafa;
     --pagination-link-color: #696969;
 
-    --post-info-color: rgb(17, 0, 255);
+    --post-info-color: #1b4965;
 
     --switcher-color: #fff;
     --switcher-bg-color: #333; 
