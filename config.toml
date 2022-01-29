@@ -1,6 +1,6 @@
 baseURL = "https://murphe22.com"
 languageCode = "en-us"
-title = "murphe22"
+title = "Emily's Personal Website!"
 theme = "anubis"
 paginate = 4
 
@@ -19,14 +19,11 @@ paginationSinglePost = true
 style = "light"
 readMore = false
 copyCodeButton = true
-rssAsSocialIcon = true
+rssAsSocialIcon = false
 enableEmoji = true
 
 # utteranc.es support
 utterancesRepo = ""  # mandatory
-utterancesTheme = "" # optional
-utterancesIssue = "" # optional
-utterancesLabel = "" # optional
 
 [markup]
   [markup.highlight]
@@ -50,6 +47,10 @@ url = "https://www.linkedin.com/in/murphe22/"
 
 [[params.social]]
 id = "github"
+url = "https://github.com/emurph1"
+
+[[params.social]]
+id = "twitter"
 url = "https://github.com/emurph1"
 
 [menu]
