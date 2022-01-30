@@ -9,7 +9,7 @@ author: "Emily Murphy"
 ---
 Hello, Emily here! 
 
-![Headshot Image](/posts/images/about/Headshot.png)
+<img src="/posts/images/about/moi.jpg" alt="headshot" width="400" height="400"/>
 
 I am currently a senior at Texas A&M University studying computer science with a minor in cybersecurity. I am originally from New England and chose Texsa A&M because I love the Aggie Spirit and the great state of Texas!
 
