@@ -105,7 +105,7 @@ We return to ghidra. Defined strings go burrrrr. “Hey, Darryl, I&rsquo;m going
 <p>Let’s just fuck around in gdb and break at this memcmp with ‘aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa’ bc its len is 0x27</p>
 <p>Gdb go burrrrrr
 ty gdb v cool</p>
-<p><img src=/content/posts/images/metactf/flag.png alt="flag in memory"></p>
+<p><img src=/posts/images/metactf/flag.png alt="flag in memory"></p>
 <h1 id=easy-as-it-is>Easy as it is
 <span>
 <a href=#easy-as-it-is><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
@@ -118,7 +118,7 @@ ty gdb v cool</p>
 </a>
 </span>
 </h2><p>Get the PGP message and private key from the pcap. Put it in CyberChef and notice it is still messed up. So, mess around with the decrompression and find that <code>gzip</code> works.</p>
-<p><img src=/content/posts/images/metactf/cyberChef.png alt=cyberchef></p>
+<p><img src=/posts/images/metactf/cyberChef.png alt=cyberchef></p>
 <p><code>MetaCTF{cleartext_private_pgp_keys}</code></p>
 <h1 id=i-hate-python>I Hate Python
 <span>
@@ -272,7 +272,7 @@ Note: The password for this user is the flag from Interception I. You must finis
 </a>
 </span>
 </h2><p>First enumerate&mldr;. <code>nmap -v 192.168.0.0/24</code></p>
-<p><img src=/content/posts/images/metactf/I3scan.png alt="nmap scan"></p>
+<p><img src=/posts/images/metactf/I3scan.png alt="nmap scan"></p>
 <p>So&mldr; telnet means we can connect to smtn&mldr; we know it is a router bc usually default gateways have an end address of &lt;0-9>.&lt;0-9>.&lt;0-9>.<strong>1</strong></p>
 <p>Gotta identify the router</p>
 <p><code>nmap -O 192.168.0.1</code></p>
@@ -297,7 +297,7 @@ password: admin
 <a href=https://blog.kintone.io/entry/bird>https://blog.kintone.io/entry/bird</a> and <a href="https://bird.network.cz/?get_doc&f=bird-4.html">https://bird.network.cz/?get_doc&f=bird-4.html</a></p>
 <p>Did not solve, but was ON THE RIGHT TRACK. At 4AM, I tried changing the OSPF cost BUT I CHANGED THE WRONG INTERFACE&rsquo;S COST. BIG SAD.</p>
 <p>Here is the writeup from another person&mldr; for next time.</p>
-<p><img src=/content/posts/images/metactf/birdShit.png alt=solve></p>
+<p><img src=/posts/images/metactf/birdShit.png alt=solve></p>
 <h1 id=where-in-the-world>Where in the World
 <span>
 <a href=#where-in-the-world><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
@@ -305,7 +305,7 @@ password: admin
 </span>
 </h1><p>I must say, every time I see one of these directional signs, I think I&rsquo;ve got to make this into a CTF problem. It&rsquo;s the idea of Open Source Intelligence (OSINT) or Geospatial Intelligence (GEOINT). The idea of being able to take an image and use all of the clues within it to infer details such as where it&rsquo;s at or what&rsquo;s happening in the photo.</p>
 <p>Here is one such picture of those signs. Your goal? Use those little details to find the name of the marina it&rsquo;s at which you&rsquo;ll submit for the flag (so MetaCTF{name of marina}</p>
-<p><img src=/content/posts/images/metactf/sign_of_cities.png alt=picture></p>
+<p><img src=/posts/images/metactf/sign_of_cities.png alt=picture></p>
 <h2 id=solve-5>Solve
 <span>
 <a href=#solve-5><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>

@@ -384,8 +384,8 @@ $prev
 </a>
 </span>
 </h2><p>Notice that this one funtion <code>rzlsqwdcbkzvl</code> takes in some int and Ghidra allows you to call functions and as you add in numbers, you find the information you want.</p>
-<p><img src=/content/posts/images/codebreaker/beginningPart.png alt="beginning of calling function"></p>
-<p><img src=/content/posts/images/codebreaker/solve.png alt="finding the relavent information for this challenge"></p>
+<p><img src=/posts/images/codebreaker/beginningPart.png alt="beginning of calling function"></p>
+<p><img src=/posts/images/codebreaker/solve.png alt="finding the relavent information for this challenge"></p>
 <h1 id=task-7---solo>Task 7 - SOLO
 <span>
 <a href=#task-7---solo><svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
@@ -456,10 +456,10 @@ $<span style=color:#bd93f9>10</span> <span style=color:#ff79c6>=</span> (std<spa
 </a>
 </span>
 </h2><p>Look at what everything is set to in ghidra within that function.</p>
-<p><img src=/content/posts/images/codebreaker/thefunction.png alt="function of interest"></p>
-<p><img src=/content/posts/images/codebreaker/ghidraVars.png alt="ghidra stuff"></p>
+<p><img src=/posts/images/codebreaker/thefunction.png alt="function of interest"></p>
+<p><img src=/posts/images/codebreaker/ghidraVars.png alt="ghidra stuff"></p>
 <p>Alternatively, you can click on the function that is taking in that variable and see what the size is (like <code>pnsikqtljaxba(&cmd_param,PARAM_CMD)</code>). You have to note down the size in order to correctly convert it to bytes and then back to a hex string/dump. We have to convert to bytes because that is what the program is doing to then send it to start the connection. We noticed this back when we saw how the UUID gets constructed. In the picture below, we see randombytes() so that tells us that there is a conversion of bytes.</p>
-<p><img src=/content/posts/images/codebreaker/assigningUUID.png alt="assigning uuid"></p>
+<p><img src=/posts/images/codebreaker/assigningUUID.png alt="assigning uuid"></p>
 <p>The parts that are sent are now defined below with the correct byte sizes.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>magic_start: <span style=color:#bd93f9>1553</span>DC11
 cmd_param: <span style=color:#bd93f9>1700</span>

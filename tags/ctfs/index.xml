@@ -332,8 +332,8 @@ $prev
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>Notice that this one funtion &lt;code>rzlsqwdcbkzvl&lt;/code> takes in some int and Ghidra allows you to call functions and as you add in numbers, you find the information you want.&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/codebreaker/beginningPart.png" alt="beginning of calling function">&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/codebreaker/solve.png" alt="finding the relavent information for this challenge">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/codebreaker/beginningPart.png" alt="beginning of calling function">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/codebreaker/solve.png" alt="finding the relavent information for this challenge">&lt;/p>
 &lt;h1 id="task-7---solo" >Task 7 - SOLO
 &lt;span>
 &lt;a href="#task-7---solo">
@@ -407,10 +407,10 @@ $&lt;span style="color:#bd93f9">10&lt;/span> &lt;span style="color:#ff79c6">=&lt
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>Look at what everything is set to in ghidra within that function.&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/codebreaker/thefunction.png" alt="function of interest">&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/codebreaker/ghidraVars.png" alt="ghidra stuff">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/codebreaker/thefunction.png" alt="function of interest">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/codebreaker/ghidraVars.png" alt="ghidra stuff">&lt;/p>
 &lt;p>Alternatively, you can click on the function that is taking in that variable and see what the size is (like &lt;code>pnsikqtljaxba(&amp;amp;cmd_param,PARAM_CMD)&lt;/code>). You have to note down the size in order to correctly convert it to bytes and then back to a hex string/dump. We have to convert to bytes because that is what the program is doing to then send it to start the connection. We noticed this back when we saw how the UUID gets constructed. In the picture below, we see randombytes() so that tells us that there is a conversion of bytes.&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/codebreaker/assigningUUID.png" alt="assigning uuid">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/codebreaker/assigningUUID.png" alt="assigning uuid">&lt;/p>
 &lt;p>The parts that are sent are now defined below with the correct byte sizes.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">magic_start: &lt;span style="color:#bd93f9">1553&lt;/span>DC11
 cmd_param: &lt;span style="color:#bd93f9">1700&lt;/span>
@@ -465,7 +465,7 @@ We return to ghidra. Defined strings go burrrrr. “Hey, Darryl, I&amp;rsquo;m g
 &lt;p>Let’s just fuck around in gdb and break at this memcmp with ‘aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa’ bc its len is 0x27&lt;/p>
 &lt;p>Gdb go burrrrrr
 ty gdb v cool&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/flag.png" alt="flag in memory">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/metactf/flag.png" alt="flag in memory">&lt;/p>
 &lt;h1 id="easy-as-it-is" >Easy as it is
 &lt;span>
 &lt;a href="#easy-as-it-is">
@@ -480,7 +480,7 @@ ty gdb v cool&lt;/p>
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>Get the PGP message and private key from the pcap. Put it in CyberChef and notice it is still messed up. So, mess around with the decrompression and find that &lt;code>gzip&lt;/code> works.&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/cyberChef.png" alt="cyberchef">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/metactf/cyberChef.png" alt="cyberchef">&lt;/p>
 &lt;p>&lt;code>MetaCTF{cleartext_private_pgp_keys}&lt;/code>&lt;/p>
 &lt;h1 id="i-hate-python" >I Hate Python
 &lt;span>
@@ -631,7 +631,7 @@ Note: The password for this user is the flag from Interception I. You must finis
 &lt;/a>
 &lt;/span>
 &lt;/h2>&lt;p>First enumerate&amp;hellip;. &lt;code>nmap -v 192.168.0.0/24&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/I3scan.png" alt="nmap scan">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/metactf/I3scan.png" alt="nmap scan">&lt;/p>
 &lt;p>So&amp;hellip; telnet means we can connect to smtn&amp;hellip; we know it is a router bc usually default gateways have an end address of &amp;lt;0-9&amp;gt;.&amp;lt;0-9&amp;gt;.&amp;lt;0-9&amp;gt;.&lt;strong>1&lt;/strong>&lt;/p>
 &lt;p>Gotta identify the router&lt;/p>
 &lt;p>&lt;code>nmap -O 192.168.0.1&lt;/code>&lt;/p>
@@ -656,7 +656,7 @@ password: admin
 &lt;a href="https://blog.kintone.io/entry/bird">https://blog.kintone.io/entry/bird&lt;/a> and &lt;a href="https://bird.network.cz/?get_doc&amp;amp;f=bird-4.html">https://bird.network.cz/?get_doc&amp;amp;f=bird-4.html&lt;/a>&lt;/p>
 &lt;p>Did not solve, but was ON THE RIGHT TRACK. At 4AM, I tried changing the OSPF cost BUT I CHANGED THE WRONG INTERFACE&amp;rsquo;S COST. BIG SAD.&lt;/p>
 &lt;p>Here is the writeup from another person&amp;hellip; for next time.&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/birdShit.png" alt="solve">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/metactf/birdShit.png" alt="solve">&lt;/p>
 &lt;h1 id="where-in-the-world" >Where in the World
 &lt;span>
 &lt;a href="#where-in-the-world">
@@ -665,7 +665,7 @@ password: admin
 &lt;/span>
 &lt;/h1>&lt;p>I must say, every time I see one of these directional signs, I think I&amp;rsquo;ve got to make this into a CTF problem. It&amp;rsquo;s the idea of Open Source Intelligence (OSINT) or Geospatial Intelligence (GEOINT). The idea of being able to take an image and use all of the clues within it to infer details such as where it&amp;rsquo;s at or what&amp;rsquo;s happening in the photo.&lt;/p>
 &lt;p>Here is one such picture of those signs. Your goal? Use those little details to find the name of the marina it&amp;rsquo;s at which you&amp;rsquo;ll submit for the flag (so MetaCTF{name of marina}&lt;/p>
-&lt;p>&lt;img src="https://murphe22.com/content/posts/images/metactf/sign_of_cities.png" alt="picture">&lt;/p>
+&lt;p>&lt;img src="https://murphe22.com/posts/images/metactf/sign_of_cities.png" alt="picture">&lt;/p>
 &lt;h2 id="solve-5" >Solve
 &lt;span>
 &lt;a href="#solve-5">
