@@ -59,7 +59,7 @@ Let’s just fuck around in gdb and break at this memcmp with ‘aaaaaaaaaaaaaaa
 Gdb go burrrrrr
 ty gdb v cool
 
-![flag in memory](/content/posts/images/metactf/flag.png)
+![flag in memory](/posts/images/metactf/flag.png)
 
 # Easy as it is
 Caleb was designing a problem for MetaCTF where the flag would be in the telnet plaintext. Unfortunately, he accidentally stopped the packet capture right before the flag was supposed to be revealed. Can you still find the flag? Note: You'll need to decrypt in CyberChef rather than using a command line utility. 
@@ -67,7 +67,7 @@ Caleb was designing a problem for MetaCTF where the flag would be in the telnet 
 ## Solve
 Get the PGP message and private key from the pcap. Put it in CyberChef and notice it is still messed up. So, mess around with the decrompression and find that `gzip` works.
 
-![cyberchef](/content/posts/images/metactf/cyberChef.png)
+![cyberchef](/posts/images/metactf/cyberChef.png)
 
 `MetaCTF{cleartext_private_pgp_keys}`
 
@@ -209,7 +209,7 @@ Note: The password for this user is the flag from Interception I. You must finis
 ## Solve
 First enumerate.... `nmap -v 192.168.0.0/24`
 
-![nmap scan](/content/posts/images/metactf/I3scan.png)
+![nmap scan](/posts/images/metactf/I3scan.png)
 
 So... telnet means we can connect to smtn... we know it is a router bc usually default gateways have an end address of <0-9>.<0-9>.<0-9>.**1**
 
@@ -250,14 +250,14 @@ Did not solve, but was ON THE RIGHT TRACK. At 4AM, I tried changing the OSPF cos
 
 Here is the writeup from another person... for next time.
 
-![solve](/content/posts/images/metactf/birdShit.png)
+![solve](/posts/images/metactf/birdShit.png)
 
 # Where in the World
 I must say, every time I see one of these directional signs, I think I've got to make this into a CTF problem. It's the idea of Open Source Intelligence (OSINT) or Geospatial Intelligence (GEOINT). The idea of being able to take an image and use all of the clues within it to infer details such as where it's at or what's happening in the photo.
 
 Here is one such picture of those signs. Your goal? Use those little details to find the name of the marina it's at which you'll submit for the flag (so MetaCTF{name of marina}
 
-![picture](/content/posts/images/metactf/sign_of_cities.png)
+![picture](/posts/images/metactf/sign_of_cities.png)
 
 ## Solve
 Google image search go brrrr.

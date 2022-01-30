@@ -264,9 +264,9 @@ Reference: [GDB x commad](https://visualgdb.com/gdbreference/commands/x)
 ## Alternative Solution Process
 Notice that this one funtion `rzlsqwdcbkzvl` takes in some int and Ghidra allows you to call functions and as you add in numbers, you find the information you want.
 
-![beginning of calling function](/content/posts/images/codebreaker/beginningPart.png)
+![beginning of calling function](/posts/images/codebreaker/beginningPart.png)
 
-![finding the relavent information for this challenge](/content/posts/images/codebreaker/solve.png)
+![finding the relavent information for this challenge](/posts/images/codebreaker/solve.png)
 
 # Task 7 - SOLO
 With the information provided, PANIC worked with OOPS to revert their Docker image to a build prior to the compromise. Both companies are implementing additional checks to prevent a similar attack in the future.
@@ -349,13 +349,13 @@ Yeah so all that did not work so I instead did it statically.
 ## Static Solve
 Look at what everything is set to in ghidra within that function.
 
-![function of interest](/content/posts/images/codebreaker/thefunction.png)
+![function of interest](/posts/images/codebreaker/thefunction.png)
 
-![ghidra stuff](/content/posts/images/codebreaker/ghidraVars.png)
+![ghidra stuff](/posts/images/codebreaker/ghidraVars.png)
 
 Alternatively, you can click on the function that is taking in that variable and see what the size is (like `pnsikqtljaxba(&cmd_param,PARAM_CMD)`). You have to note down the size in order to correctly convert it to bytes and then back to a hex string/dump. We have to convert to bytes because that is what the program is doing to then send it to start the connection. We noticed this back when we saw how the UUID gets constructed. In the picture below, we see randombytes() so that tells us that there is a conversion of bytes.
 
-![assigning uuid](/content/posts/images/codebreaker/assigningUUID.png)
+![assigning uuid](/posts/images/codebreaker/assigningUUID.png)
 
 The parts that are sent are now defined below with the correct byte sizes.
 ```python
