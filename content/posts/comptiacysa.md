@@ -10,7 +10,7 @@ tags = [
 categories = ["blog"]
 +++
 
-This is my personal blog/report on how the CompTIA Cybersecurity Analyst+ certifcation exam.
+This is my personal blog/report on how the CompTIA Cybersecurity Analyst+ certifcation exam went!
 <!--more-->
 
 
