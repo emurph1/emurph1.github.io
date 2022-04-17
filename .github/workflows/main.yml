@@ -27,7 +27,7 @@ jobs:
         run: hugo --minify
         
       - name: Build with Asciidoctor
-        run: apt install -y asciidoctor
+        run: apt install asciidoctor -y
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
