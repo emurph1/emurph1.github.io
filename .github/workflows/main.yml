@@ -24,11 +24,9 @@ jobs:
           # extended: true
 
       - name: Build
+        run: apt install asciidoctor -y
         run: hugo --minify
         
-      - name: Build with Asciidoctor
-        run: apt install asciidoctor -y
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
