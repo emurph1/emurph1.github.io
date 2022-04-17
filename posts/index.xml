@@ -845,7 +845,7 @@ Transfer&lt;span style="color:#ff79c6">-&lt;/span>Encoding: chunked
 &lt;li>Must pay $50 annually or $150 for the three years&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>TAMUctf ASCIIDOC</title><link>https://murphe22.com/posts/tamuctf22-_2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/tamuctf22-_2/</guid><description>&lt;div class="paragraph">
+&lt;/ul></description></item><item><title>TAMUctf 2022</title><link>https://murphe22.com/posts/tamuctf22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/tamuctf22/</guid><description>&lt;div class="paragraph">
 &lt;p>&lt;strong>Ending Rank:&lt;/strong> 1st place amongst TAMU teams and 14th overall (Total of 477 teams)&lt;/p>
 &lt;/div>
 &lt;div class="paragraph">
@@ -857,13 +857,9 @@ Transfer&lt;span style="color:#ff79c6">-&lt;/span>Encoding: chunked
 &lt;div class="paragraph">
 &lt;p>For this CTF, I only wrote writeups for the challenges I found the most interesting/wanted to make a writeup for in case I need the skills for future CTFs.&lt;/p>
 &lt;/div>
+&lt;h1 id="_non_stick_disk" class="sect0">Non Stick Disk&lt;/h1>
 &lt;div class="paragraph">
-&lt;p>*_= Non Stick Disk
-:source-highlighter: pygments
-:source-language: python&lt;/p>
-&lt;/div>
-&lt;div class="paragraph">
-&lt;p>Author: nightfury&lt;/p>
+&lt;p>CTF username: nightfury&lt;/p>
 &lt;/div>
 &lt;div class="sect1">
 &lt;h2 id="_prompt">Prompt&lt;/h2>
@@ -932,7 +928,7 @@ the nonstick directory is actually mounted on a directory called mountpoint
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="../non-stick-disk/alternative_key.png" alt="100" width="300"/>
+&lt;img src="../images/tamuctf/non-stick-disk/alternative_key.png" alt="100" width="300"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -940,7 +936,7 @@ the nonstick directory is actually mounted on a directory called mountpoint
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="../non-stick-disk/xorbytes.png" alt="300" width="300"/>
+&lt;img src="../images/tamuctf/non-stick-disk/xorbytes.png" alt="300" width="300"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -951,7 +947,7 @@ the nonstick directory is actually mounted on a directory called mountpoint
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="../non-stick-disk/cyberchef.png" alt="cyberchef"/>
+&lt;img src="../images/tamuctf/non-stick-disk/cyberchef.png" alt="cyberchef"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -962,7 +958,7 @@ the nonstick directory is actually mounted on a directory called mountpoint
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="../non-stick-disk/solvers2.png" alt="300" width="300"/>
+&lt;img src="../images/tamuctf/non-stick-disk/solvers2.png" alt="300" width="300"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="sect2">
@@ -975,119 +971,147 @@ the nonstick directory is actually mounted on a directory called mountpoint
 &lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>TAMUctf 2022</title><link>https://murphe22.com/posts/tamuctf22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://murphe22.com/posts/tamuctf22/</guid><description>&lt;p>&lt;strong>Ending Rank:&lt;/strong> 1st place amongst TAMU teams and 14th overall (Total of 477 teams)&lt;/p>
-&lt;p>TAMUctf is a jeopardy-style cybersecurity capture the flag competition developed and hosted by Texas A&amp;amp;M Students. The competition has been designed to have challenges accessible to newer players as well ones that will keep more experienced players busy. So if you are just getting into cybersecurity or have been playing CTFs for a while, TAMUctf will be a great opportunity to learn new cybersecurity skills!&lt;/p>
-&lt;p>&lt;strong>Time:&lt;/strong> Starting at 12:00pm Friday – Closing 12:00pm Sunday&lt;/p>
-&lt;p>For this CTF, I only wrote writeups for the challenges I found the most interesting/wanted to make a writeup for in case I need the skills for future CTFs.&lt;/p>
-&lt;p>&lt;em>&lt;strong>CTF username:&lt;/strong>&lt;/em> nightfury&lt;/p>
-&lt;h1 id="non-stick-disk" >Non Stick Disk
-&lt;span>
-&lt;a href="#non-stick-disk">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h1>&lt;h2 id="prompt" >Prompt
-&lt;span>
-&lt;a href="#prompt">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h2>&lt;p>We&amp;rsquo;ve established a persistence mechanism on the attached disk. Can you determine what that is?&lt;/p>
-&lt;p>The flag is in the standard format. You&amp;rsquo;ll know it when you see it. :)&lt;/p>
-&lt;p>&lt;strong>Given&lt;/strong>: non-stick-disk.zlib&lt;/p>
-&lt;h2 id="solve" >Solve
-&lt;span>
-&lt;a href="#solve">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h2>&lt;p>First I had to figure out how to decompress a zlib file within a directory. I used &lt;a href="https://unix.stackexchange.com/questions/22834/how-to-uncompress-zlib-data-in-unix">this&lt;/a> resource in order to do it and piped it into a directory. Full command:&lt;/p>
-&lt;p>&lt;code>zlib-flat -uncompress &amp;lt; non-stick-disk.zlib &amp;gt; nonstick&lt;/code>&lt;/p>
-&lt;p>From there, I noticed there are a TON of files in the directory, so one trick of forensics (that I now know) is to check the &lt;code>etc/os-release&lt;/code> and then do a diff on the filesystems. From cat-ing the os-release, we see this:&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/non-stick-disk/os-release.png" />
-&lt;p>Now came the part that took me the longest&amp;hellip; finding a root filesystem that I could diff on. At first, Rohan and I were pouring through FTK Imager and Autopsy to find sus things, but came to no promising findings (even had a little red herring). After a copious amount of researching, one key google search and many clicks later got me to &lt;a href="https://help.ubuntu.com/community/DebootstrapChroot">Debootstrap&lt;/a>. A little bit more reading on how to Debootstrap and understanding what architecture the nonstick filesystem is (there is a &lt;code>x86_64-linux_gnu&lt;/code> directory in &lt;code>lib&lt;/code>, which indicated amd64), we could create our own Ubuntu 20.04 Focal Fossa &lt;a href="https://pub.nethence.com/xen/debootstrap">quick&lt;/a>! Actual command:&lt;/p>
-&lt;p>&lt;code>sudo debootstrap --arch amd64 focal ubuntu (direcotry I want it to go to) http://archive.ubuntu.com/ubuntu&lt;/code>&lt;/p>
-&lt;p>With my two filesystems, I could finally do a diff and see what things may be interesting to investigate&amp;hellip; much better than having to search through each file (which I had already done plenty of by this point).&lt;/p>
-&lt;p>NOTE: the nonstick directory is actually mounted on a directory called mountpoint&lt;/p>
-&lt;p>To diff the filesystems: &lt;code>diff -qr mountpoint ubuntu &amp;gt; diffs.txt&lt;/code>&lt;/p>
-&lt;p>&lt;code>-q&lt;/code> for quick so we can see ONLY the files that differ between the two filesystems +
-&lt;code>-r&lt;/code> for recursive&lt;/p>
-&lt;p>Investigating the &lt;code>diffs.txt&lt;/code>, there is one sus line and that is &lt;code>File mountpount/lib/x86_64-linux-gnu/security/pam_unix.so and ubuntu/lib/x86_64-linux-gnu/security/pam_unix.so differ&lt;/code>. So, I strings-d the file and saw &lt;code>/home/addisoncrump/git/tamuctf-2022/forensics/non-stick-disk/pam_backdoor/linux-pam-1.3.1/modules/pam_unix&lt;/code> so that was pretty assuring that this was indeed the persistence mechanism.&lt;/p>
-&lt;p>But where is the flag? Well we have a binary so naturally, the next step is to boot it up in good ol Ghidra. I poked around for a good amount before I finally saw something that could be related to the flag and it was this little snippet:&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/non-stick-disk/alternative_key.png" width=200 height=400/>
-&lt;p>Now there is an alternative and alternative_key stored in byte arrays, so that is interesting, but how are they used? Well if we look at the following code:&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/non-stick-disk/xorbytes.png" width=300 height=300 />
-&lt;p>This indicates that each byte is xor-d with each other&amp;hellip; so we can go in and grab that hex and xor them against each other.&lt;/p>
-&lt;p>The other thing to note here is the &lt;code>bVar9 = 0xea&lt;/code> and &lt;code>bVar9 = 0x8d&lt;/code>. When you xor these values, you get &amp;lsquo;g&amp;rsquo;, so we further know that this is an xor to get the flag. Using &lt;a href="https://xor.pw/">XOR calculator&lt;/a>, we get &lt;code>67656769675f617b6d5f7469625f6f6f746976626f5f73756f795f6669615f756f6d5f6b730000&lt;/code>, which we put into &lt;a href="https://cyberchef.org">Cyberchef&lt;/a>. We did have to mess around a little to get the actual flag format (removing the beginning &amp;ldquo;67&amp;rdquo; and then adding a &amp;ldquo;65&amp;rdquo; at the end). Finaly recipe:&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/non-stick-disk/cyberchef.png" />
-&lt;p>Flag: &lt;code>gigem{a_bit_too_obvious_if_you_ask_me}&lt;/code>&lt;/p>
-&lt;p>This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool :D.&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/non-stick-disk/solvers2.png" width=300 height=300/>
-&lt;p>=== Alternatve (and much faster solve)
-After solving the challenge in the way described above, I wondered if you could solve it quicker using grep.&lt;/p>
-&lt;p>Turns out Addison didn&amp;rsquo;t strip symbols, so you could in fact &lt;code>grep -r &amp;quot;backdoor&amp;quot;&lt;/code> and find the file&amp;hellip;. :pensive:, but at least I learned a lot in the process!&lt;/p>
-&lt;h1 id="vanity" >Vanity
-&lt;span>
-&lt;a href="#vanity">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h1>&lt;h2 id="prompt-1" >Prompt
-&lt;span>
-&lt;a href="#prompt-1">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h2>&lt;p>&lt;a href="https://github.com/tamuctf/vanity">Read, weep, seethe, and cope.&lt;/a>&lt;/p>
+&lt;/div>
+&lt;h1 id="_vanity" class="sect0">Vanity&lt;/h1>
+&lt;div class="sect1">
+&lt;h2 id="_prompt_2">Prompt&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="paragraph">
+&lt;p>&lt;a href="https://github.com/tamuctf/vanity">Read, weep, seethe, and cope.&lt;/a>&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Only commits you need to consider are those made by VTCAKAVSMoACE.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>&lt;strong>Given:&lt;/strong> &lt;a href="https://c.tenor.com/3BMRCVepIa8AAAAC/vanity-smurf-youre-so-vain.gif">vanity-smurf-youre-so-vain.gif&lt;/a>&lt;/p>
-&lt;p>== Solve
-So at first glance, the link goes to a git repo that is completely empty. There was only one commit and zero history so that was interesting&amp;hellip;.&lt;/p>
-&lt;p>The prompt and gif associated with this challenge gave a good amount away. Now I was not very smart and got caught in an article saying you &lt;em>couldn&amp;rsquo;t&lt;/em> mirror a git repo and it wasn&amp;rsquo;t until Rohan looked into it that I realized my grave mistake&amp;hellip;.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="sect1">
+&lt;h2 id="_solve_2">Solve&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="paragraph">
+&lt;p>So at first glance, the link goes to a git repo that is completely empty. There was only one commit and zero history so that was interesting…​.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>The prompt and gif associated with this challenge gave a good amount away. Now I was not very smart and got caught in an article saying you &lt;em>couldn’t&lt;/em> mirror a git repo and it wasn’t until Rohan looked into it that I realized my grave mistake…​.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Anywho, looking at this &lt;a href="https://sourcelevel.io/blog/how-to-properly-mirror-a-git-repository">how to properly mirror a git repository&lt;/a>, we could find the mirrored git repo.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Command: &lt;code>git clone --mirror vanityhttps://github.com/tamuctf/&lt;/code>&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Then we see the following and get the flag!&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/vanity.png"/>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/vanity_flag.png"/>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="../images/tamuctf/vanity.png" alt="vanity"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="../images/tamuctf/vanity_flag.png" alt="vanity flag"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Flag: &lt;code>gigem{watch_the_night_and_bleed_for_me}&lt;/code>&lt;/p>
-&lt;h1 id="existing-tooling" >Existing Tooling
-&lt;span>
-&lt;a href="#existing-tooling">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h1>&lt;h2 id="prompt-2" >Prompt
-&lt;span>
-&lt;a href="#prompt-2">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h2>&lt;p>Have fun reversing this little crackme. :)&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h1 id="_existing_tooling" class="sect0">Existing Tooling&lt;/h1>
+&lt;div class="sect1">
+&lt;h2 id="_prompt_3">Prompt&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="paragraph">
+&lt;p>Have fun reversing this little crackme. :)&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>&lt;strong>Given:&lt;/strong> existing-tooling binary&lt;/p>
-&lt;h2 id="solve-1" >Solve
-&lt;span>
-&lt;a href="#solve-1">
-&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
-&lt;/a>
-&lt;/span>
-&lt;/h2>&lt;p>NOTE: I did not complete this challenge&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="sect1">
+&lt;h2 id="_solve_3">Solve&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="admonitionblock note">
+&lt;table>
+&lt;tbody>&lt;tr>
+&lt;td class="icon">
+&lt;div class="title">Note&lt;/div>
+&lt;/td>
+&lt;td class="content">
+I did not complete this challenge
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>&lt;/table>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>First things first with any RE challenge is to check file type and run the bad boy:&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/existing_tooling/existing_type.png"/>
-&lt;p>Key thing: the flag is 72 characters long&amp;hellip; we can look in a handy dandy tool&amp;hellip;&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="../images/tamuctf/existing_tooling/existing_type.png" alt="existing type"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Key thing: the flag is 72 characters long…​ we can look in a handy dandy tool…​&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Ghidra time!!!&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>When you load the binary into Ghidra and start at the entry, we see this:&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/existing_tooling/entry.png"/>
-&lt;p>Going into that &lt;code>FUN_00101140&lt;/code>, we find an interesting block of code&amp;hellip; it is a pointer that points to null? Strange.&lt;/p>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/existing_tooling/point_null.png"/>
-&lt;p>So there is probably something there, so let&amp;rsquo;s investigate! GDB gef is a life savior :D.&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="../images/tamuctf/existing_tooling/entry.png" alt="entry"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Going into that &lt;code>FUN_00101140&lt;/code>, we find an interesting block of code…​ it is a pointer that points to null? Strange.&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="../images/tamuctf/existing_tooling/point_null.png" alt="point null"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>So there is probably something there, so let’s investigate! GDB gef is a life savior :D.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
 &lt;p>Commands:&lt;/p>
+&lt;/div>
+&lt;div class="ulist">
 &lt;ul>
-&lt;li>gdb existing-tooling -&amp;gt; go into gdb (already have gef installed)&lt;/li>
-&lt;li>start -&amp;gt; start the program&lt;/li>
-&lt;li>vmmap -&amp;gt; this is to get the base address so that I can then set a breakpoint at this sus code block -&amp;gt; starts at 0x00000008000000&lt;/li>
-&lt;li>b *0x00000008000000+120d -&amp;gt; set a breakpoint at the derefenced address of base + the offset we see in the image above (don&amp;rsquo;t include &amp;ldquo;h&amp;rdquo; bc that just indicates hex)&lt;/li>
-&lt;li>c -&amp;gt; for continue&lt;/li>
-&lt;li>x/s $rbp -&amp;gt; we can see part of the flag in the below image, so to get the whole thing, we gotta output the contents of that register (rbp)&lt;/li>
+&lt;li>
+&lt;p>gdb existing-tooling → go into gdb (already have gef installed)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>start → start the program&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>vmmap → this is to get the base address so that I can then set a breakpoint at this sus code block → starts at 0x00000008000000&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>b *0x00000008000000+120d → set a breakpoint at the derefenced address of base + the offset we see in the image above (don’t include &amp;#34;h&amp;#34; bc that just indicates hex)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>c → for continue&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>x/s $rbp → we can see part of the flag in the below image, so to get the whole thing, we gotta output the contents of that register (rbp)&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;img src="https://murphe22.com/posts/images/tamuctf/existing_tooling/rbp_flag.png"/>
-&lt;p>Flag: &lt;code>gigem{im_curious_did_you_statically_or_dynamically_reverse_ping_addison}&lt;/code>&lt;/p></description></item></channel></rss>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="../images/tamuctf/existing_tooling/rbp_flag.png" alt="rbp flag"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Flag: &lt;code>gigem{im_curious_did_you_statically_or_dynamically_reverse_ping_addison}&lt;/code>&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
