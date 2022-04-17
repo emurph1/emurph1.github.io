@@ -22,9 +22,11 @@ jobs:
         with:
           hugo-version: '0.91.2'
           # extended: true
+    
+      - name: Build with Asciidoctor
+        run: apt install asciidoctor -y
 
       - name: Build
-        run: apt install asciidoctor -y
         run: hugo --minify
         
       - name: Deploy
