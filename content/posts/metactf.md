@@ -45,7 +45,7 @@ The password for 2&3 is just chilling in strings DARRYL_IS_THE_GREATEST
 Essentially, the password is checked on three separate occasions
 We return to ghidra. Defined strings go burrrrr. “Hey, Darryl, I'm going to need your password” has three functions nearby it. Three???? hmmmmmmmmmmmmmmm
 
-![idek](/content/posts/images/metactf/message.png)
+![idek](/posts/images/metactf/message.png)
 
 Why dont we click on those functions 👀 
 

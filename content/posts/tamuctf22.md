@@ -10,38 +10,36 @@ tags = [
 categories = ["writeups"]
 +++
 
-*Ending Rank:* 1st place amongst TAMU teams and 14th overall (Total of 477 teams)
+**Ending Rank:** 1st place amongst TAMU teams and 14th overall (Total of 477 teams)
 
 TAMUctf is a jeopardy-style cybersecurity capture the flag competition developed and hosted by Texas A&M Students. The competition has been designed to have challenges accessible to newer players as well ones that will keep more experienced players busy. So if you are just getting into cybersecurity or have been playing CTFs for a while, TAMUctf will be a great opportunity to learn new cybersecurity skills!
 
-*Time:* Starting at 12:00pm Friday – Closing 12:00pm Sunday
+**Time:** Starting at 12:00pm Friday – Closing 12:00pm Sunday
 
 For this CTF, I only wrote writeups for the challenges I found the most interesting/wanted to make a writeup for in case I need the skills for future CTFs.
 <!--more-->
 
-= Non Stick Disk
-:source-highlighter: pygments
-:source-language: python
+*__CTF username:__* nightfury
 
-CTF username: nightfury
+# Non Stick Disk
 
-== Prompt
+## Prompt
 We've established a persistence mechanism on the attached disk. Can you determine what that is?
 
 The flag is in the standard format. You'll know it when you see it. :)
 
-*Given*: non-stick-disk.zlib
+**Given**: non-stick-disk.zlib
 
-== Solve
-First I had to figure out how to decompress a zlib file within a directory. I used https://unix.stackexchange.com/questions/22834/how-to-uncompress-zlib-data-in-unix[this] resource in order to do it and piped it into a directory. Full command:
+## Solve
+First I had to figure out how to decompress a zlib file within a directory. I used [this](https://unix.stackexchange.com/questions/22834/how-to-uncompress-zlib-data-in-unix) resource in order to do it and piped it into a directory. Full command:
 
 `zlib-flat -uncompress < non-stick-disk.zlib > nonstick`
 
 From there, I noticed there are a TON of files in the directory, so one trick of forensics (that I now know) is to check the `etc/os-release` and then do a diff on the filesystems. From cat-ing the os-release, we see this:
 
-image::../non-stick-disk/os-release.png[]
+<img src="/posts/images/tamuctf/non-stick-disk/os-release.png" />
 
-Now came the part that took me the longest... finding a root filesystem that I could diff on. At first, Rohan and I were pouring through FTK Imager and Autopsy to find sus things, but came to no promising findings (even had a little red herring). After a copious amount of researching, one key google search and many clicks later got me to https://help.ubuntu.com/community/DebootstrapChroot[Debootstrap]. A little bit more reading on how to Debootstrap and understanding what architecture the nonstick filesystem is (there is a `x86_64-linux_gnu` directory in `lib`, which indicated amd64), we could create our own Ubuntu 20.04 Focal Fossa https://pub.nethence.com/xen/debootstrap[quick]! Actual command:
+Now came the part that took me the longest... finding a root filesystem that I could diff on. At first, Rohan and I were pouring through FTK Imager and Autopsy to find sus things, but came to no promising findings (even had a little red herring). After a copious amount of researching, one key google search and many clicks later got me to [Debootstrap](https://help.ubuntu.com/community/DebootstrapChroot). A little bit more reading on how to Debootstrap and understanding what architecture the nonstick filesystem is (there is a `x86_64-linux_gnu` directory in `lib`, which indicated amd64), we could create our own Ubuntu 20.04 Focal Fossa [quick](https://pub.nethence.com/xen/debootstrap)! Actual command:
 
 `sudo debootstrap --arch amd64 focal ubuntu (direcotry I want it to go to) http://archive.ubuntu.com/ubuntu`
 
@@ -58,69 +56,67 @@ Investigating the `diffs.txt`, there is one sus line and that is `File mountpoun
 
 But where is the flag? Well we have a binary so naturally, the next step is to boot it up in good ol Ghidra. I poked around for a good amount before I finally saw something that could be related to the flag and it was this little snippet:
 
-image::../images/tamuctf/non-stick-disk/alternative_key.png[100,300]
+<img src="/posts/images/tamuctf/non-stick-disk/alternative_key.png" width=200 height=400/>
 
 Now there is an alternative and alternative_key stored in byte arrays, so that is interesting, but how are they used? Well if we look at the following code:
 
-image::../images/tamuctf/non-stick-disk/xorbytes.png[300,300]
+<img src="/posts/images/tamuctf/non-stick-disk/xorbytes.png" width=300 height=300 />
 
 This indicates that each byte is xor-d with each other... so we can go in and grab that hex and xor them against each other. 
 
-The other thing to note here is the `bVar9 = 0xea` and `bVar9 = 0x8d`. When you xor these values, you get 'g', so we further know that this is an xor to get the flag. Using https://xor.pw/[XOR calculator], we get `67656769675f617b6d5f7469625f6f6f746976626f5f73756f795f6669615f756f6d5f6b730000`, which we put into https://cyberchef.org[Cyberchef]. We did have to mess around a little to get the actual flag format (removing the beginning "67" and then adding a "65" at the end). Finaly recipe:
+The other thing to note here is the `bVar9 = 0xea` and `bVar9 = 0x8d`. When you xor these values, you get 'g', so we further know that this is an xor to get the flag. Using [XOR calculator](https://xor.pw/), we get `67656769675f617b6d5f7469625f6f6f746976626f5f73756f795f6669615f756f6d5f6b730000`, which we put into [Cyberchef](https://cyberchef.org). We did have to mess around a little to get the actual flag format (removing the beginning "67" and then adding a "65" at the end). Finaly recipe:
 
-image::../images/tamuctf/non-stick-disk/cyberchef.png[]
+<img src="/posts/images/tamuctf/non-stick-disk/cyberchef.png" />
 
 Flag: `gigem{a_bit_too_obvious_if_you_ask_me}`
 
 This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool :D.
 
-image::../images/tamuctf/non-stick-disk/solvers2.png[300,300]
+<img src="/posts/images/tamuctf/non-stick-disk/solvers2.png" width=300 height=300/>
 
 === Alternatve (and much faster solve)
 After solving the challenge in the way described above, I wondered if you could solve it quicker using grep.
 
 Turns out Addison didn't strip symbols, so you could in fact `grep -r "backdoor"` and find the file.... :pensive:, but at least I learned a lot in the process!
 
-= Vanity
-:source-highlighter: pygments
-:source-language: python
+# Vanity
 
-== Prompt
-https://github.com/tamuctf/vanity[Read, weep, seethe, and cope.]
+## Prompt
+[Read, weep, seethe, and cope.](https://github.com/tamuctf/vanity)
 
 Only commits you need to consider are those made by VTCAKAVSMoACE.
 
-*Given:* https://c.tenor.com/3BMRCVepIa8AAAAC/vanity-smurf-youre-so-vain.gif[vanity-smurf-youre-so-vain.gif]
+**Given:** [vanity-smurf-youre-so-vain.gif](https://c.tenor.com/3BMRCVepIa8AAAAC/vanity-smurf-youre-so-vain.gif)
 
 == Solve
 So at first glance, the link goes to a git repo that is completely empty. There was only one commit and zero history so that was interesting....
 
 The prompt and gif associated with this challenge gave a good amount away. Now I was not very smart and got caught in an article saying you _couldn't_ mirror a git repo and it wasn't until Rohan looked into it that I realized my grave mistake....
 
-Anywho, looking at this https://sourcelevel.io/blog/how-to-properly-mirror-a-git-repository[how to properly mirror a git repository], we could find the mirrored git repo.
+Anywho, looking at this [how to properly mirror a git repository](https://sourcelevel.io/blog/how-to-properly-mirror-a-git-repository), we could find the mirrored git repo.
 
 Command: `git clone --mirror vanityhttps://github.com/tamuctf/`
 
 Then we see the following and get the flag!
 
-image::../images/tamuctf/vanity.png[]
-image::../images/tamuctf/vanity_flag.png[]
+<img src="/posts/images/tamuctf/vanity.png"/>
+<img src="/posts/images/tamuctf/vanity_flag.png"/>
 
 Flag: `gigem{watch_the_night_and_bleed_for_me}`
 
-= Existing Tooling
+# Existing Tooling
 
-== Prompt
+## Prompt
 Have fun reversing this little crackme. :)
 
-*Given:* existing-tooling binary
+**Given:** existing-tooling binary
 
-== Solve
+## Solve
 NOTE: I did not complete this challenge
 
 First things first with any RE challenge is to check file type and run the bad boy:
 
-image::../images/tamuctf/existing_tooling/existing_type.png[]
+<img src="/posts/images/tamuctf/existing_tooling/existing_type.png"/>
 
 Key thing: the flag is 72 characters long... we can look in a handy dandy tool...
 
@@ -128,11 +124,11 @@ Ghidra time!!!
 
 When you load the binary into Ghidra and start at the entry, we see this:
 
-image::../images/tamuctf/existing_tooling/entry.png[]
+<img src="/posts/images/tamuctf/existing_tooling/entry.png"/>
 
 Going into that `FUN_00101140`, we find an interesting block of code... it is a pointer that points to null? Strange.
 
-image::../images/tamuctf/existing_tooling/point_null.png[]
+<img src="/posts/images/tamuctf/existing_tooling/point_null.png"/>
 
 So there is probably something there, so let's investigate! GDB gef is a life savior :D.
 
@@ -145,6 +141,6 @@ Commands:
 * c -> for continue
 * x/s $rbp -> we can see part of the flag in the below image, so to get the whole thing, we gotta output the contents of that register (rbp)
 
-image::../images/tamuctf/existing_tooling/rbp_flag.png[]
+<img src="/posts/images/tamuctf/existing_tooling/rbp_flag.png"/>
 
 Flag: `gigem{im_curious_did_you_statically_or_dynamically_reverse_ping_addison}`
