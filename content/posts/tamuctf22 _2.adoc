@@ -1,0 +1,82 @@
++++
+author = "Emily Murphy"
+title = "TAMUctf  ASCIIDOC"
+date = "2022-4-17"
+description = "TAMUctf 2022 ASCIIDOC"
+tags = [
+    "ctfs",
+    "writeups",
+]
+categories = ["writeups"]
++++
+
+*Ending Rank:* 1st place amongst TAMU teams and 14th overall (Total of 477 teams)
+
+TAMUctf is a jeopardy-style cybersecurity capture the flag competition developed and hosted by Texas A&M Students. The competition has been designed to have challenges accessible to newer players as well ones that will keep more experienced players busy. So if you are just getting into cybersecurity or have been playing CTFs for a while, TAMUctf will be a great opportunity to learn new cybersecurity skills!
+
+*Time:* Starting at 12:00pm Friday – Closing 12:00pm Sunday
+
+For this CTF, I only wrote writeups for the challenges I found the most interesting/wanted to make a writeup for in case I need the skills for future CTFs.
+<!--more-->
+
+*_= Non Stick Disk
+:source-highlighter: pygments
+:source-language: python
+
+Author: nightfury
+
+== Prompt
+We've established a persistence mechanism on the attached disk. Can you determine what that is?
+
+The flag is in the standard format. You'll know it when you see it. :)
+
+*Given*: non-stick-disk.zlib
+
+== Solve
+First I had to figure out how to decompress a zlib file within a directory. I used https://unix.stackexchange.com/questions/22834/how-to-uncompress-zlib-data-in-unix[this] resource in order to do it and piped it into a directory. Full command:
+
+`zlib-flat -uncompress < non-stick-disk.zlib > nonstick`
+
+From there, I noticed there are a TON of files in the directory, so one trick of forensics (that I now know) is to check the `etc/os-release` and then do a diff on the filesystems. From cat-ing the os-release, we see this:
+
+image::../non-stick-disk/os-release.png[]
+
+Now came the part that took me the longest... finding a root filesystem that I could diff on. At first, Rohan and I were pouring through FTK Imager and Autopsy to find sus things, but came to no promising findings (even had a little red herring). After a copious amount of researching, one key google search and many clicks later got me to https://help.ubuntu.com/community/DebootstrapChroot[Debootstrap]. A little bit more reading on how to Debootstrap and understanding what architecture the nonstick filesystem is (there is a `x86_64-linux_gnu` directory in `lib`, which indicated amd64), we could create our own Ubuntu 20.04 Focal Fossa https://pub.nethence.com/xen/debootstrap[quick]! Actual command:
+
+`sudo debootstrap --arch amd64 focal ubuntu (direcotry I want it to go to) http://archive.ubuntu.com/ubuntu`
+
+With my two filesystems, I could finally do a diff and see what things may be interesting to investigate... much better than having to search through each file (which I had already done plenty of by this point).
+
+NOTE: the nonstick directory is actually mounted on a directory called mountpoint
+
+To diff the filesystems: `diff -qr mountpoint ubuntu > diffs.txt`
+
+`-q` for quick so we can see ONLY the files that differ between the two filesystems +
+`-r` for recursive
+
+Investigating the `diffs.txt`, there is one sus line and that is `File mountpount/lib/x86_64-linux-gnu/security/pam_unix.so and ubuntu/lib/x86_64-linux-gnu/security/pam_unix.so differ`. So, I strings-d the file and saw `/home/addisoncrump/git/tamuctf-2022/forensics/non-stick-disk/pam_backdoor/linux-pam-1.3.1/modules/pam_unix` so that was pretty assuring that this was indeed the persistence mechanism.
+
+But where is the flag? Well we have a binary so naturally, the next step is to boot it up in good ol Ghidra. I poked around for a good amount before I finally saw something that could be related to the flag and it was this little snippet:
+
+image::../non-stick-disk/alternative_key.png[100,300]
+
+Now there is an alternative and alternative_key stored in byte arrays, so that is interesting, but how are they used? Well if we look at the following code:
+
+image::../non-stick-disk/xorbytes.png[300,300]
+
+This indicates that each byte is xor-d with each other... so we can go in and grab that hex and xor them against each other. 
+
+The other thing to note here is the `bVar9 = 0xea` and `bVar9 = 0x8d`. When you xor these values, you get 'g', so we further know that this is an xor to get the flag. Using https://xor.pw/[XOR calculator], we get `67656769675f617b6d5f7469625f6f6f746976626f5f73756f795f6669615f756f6d5f6b730000`, which we put into https://cyberchef.org[Cyberchef]. We did have to mess around a little to get the actual flag format (removing the beginning "67" and then adding a "65" at the end). Finaly recipe:
+
+image::../non-stick-disk/cyberchef.png[]
+
+Flag: `gigem{a_bit_too_obvious_if_you_ask_me}`
+
+This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool :D.
+
+image::../non-stick-disk/solvers2.png[300,300]
+
+=== Alternatve (and much faster solve)
+After solving the challenge in the way described above, I wondered if you could solve it quicker using grep.
+
+Turns out Addison didn't strip symbols, so you could in fact `grep -r "backdoor"` and find the file.... :pensive:, but at least I learned a lot in the process!
