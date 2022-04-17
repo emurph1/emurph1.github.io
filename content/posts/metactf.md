@@ -9,6 +9,7 @@ tags = [
 ]
 categories = ["writeups"]
 +++
+**Ending Rank:** 58th overall (total 1956 teams), 25th amongst student teams (total: 1039 teams)
 
 Starting Friday, December 3rd, 2021, MetaCTF will host it's 7th annual virtual jeopardy-style CTF! This event is free and open to everyone, and participants can compete in teams of up to 4.
 
