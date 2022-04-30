@@ -113,7 +113,7 @@
 <p>Now came the part that took me the longest…​ finding a root filesystem that I could diff on. At first, Rohan and I were pouring through FTK Imager and Autopsy to find sus things, but came to no promising findings (even had a little red herring). After a copious amount of researching, one key google search and many clicks later got me to <a href=https://help.ubuntu.com/community/DebootstrapChroot>Debootstrap</a>. A little bit more reading on how to Debootstrap and understanding what architecture the nonstick filesystem is (there is a <code>x86_64-linux_gnu</code> directory in <code>lib</code>, which indicated amd64), we could create our own Ubuntu 20.04 Focal Fossa <a href=https://pub.nethence.com/xen/debootstrap>quick</a>! Actual command:</p>
 </div>
 <div class=paragraph>
-<p><code>sudo debootstrap --arch amd64 focal ubuntu (direcotry I want it to go to) <a href=http://archive.ubuntu.com/ubuntu class=bare>http://archive.ubuntu.com/ubuntu</a></code></p>
+<p><code>sudo debootstrap --arch amd64 focal ubuntu (directory I want it to go to) <a href=http://archive.ubuntu.com/ubuntu class=bare>http://archive.ubuntu.com/ubuntu</a></code></p>
 </div>
 <div class=paragraph>
 <p>With my two filesystems, I could finally do a diff and see what things may be interesting to investigate…​ much better than having to search through each file (which I had already done plenty of by this point).</p>
@@ -160,7 +160,7 @@ the nonstick directory is actually mounted on a directory called mountpoint
 <p>This indicates that each byte is xor-d with each other…​ so we can go in and grab that hex and xor them against each other.</p>
 </div>
 <div class=paragraph>
-<p>The other thing to note here is the <code>bVar9 = 0xea</code> and <code>bVar9 = 0x8d</code>. When you xor these values, you get 'g', so we further know that this is an xor to get the flag. Using <a href=https://xor.pw/>XOR calculator</a>, we get <code>67656769675f617b6d5f7469625f6f6f746976626f5f73756f795f6669615f756f6d5f6b730000</code>, which we put into <a href=https://cyberchef.org>Cyberchef</a>. We did have to mess around a little to get the actual flag format (removing the beginning "67" and then adding a "65" at the end). Finaly recipe:</p>
+<p>The other thing to note here is the <code>bVar9 = 0xea</code> and <code>bVar9 = 0x8d</code>. When you xor these values, you get 'g', so we further know that this is an xor to get the flag. Using <a href=https://xor.pw/>XOR calculator</a>, we get <code>67656769675f617b6d5f7469625f6f6f746976626f5f73756f795f6669615f756f6d5f6b730000</code>, which we put into <a href=https://cyberchef.org>Cyberchef</a>. We did have to mess around a little to get the actual flag format (removing the beginning "67" and then adding a "65" at the end). Finally recipe:</p>
 </div>
 <div class=imageblock>
 <div class=content>
@@ -312,7 +312,7 @@ I did not complete this challenge
 <p>vmmap → this is to get the base address so that I can then set a breakpoint at this sus code block → starts at 0x00000008000000</p>
 </li>
 <li>
-<p>b *0x00000008000000+120d → set a breakpoint at the derefenced address of base + the offset we see in the image above (don’t include "h" bc that just indicates hex)</p>
+<p>b *0x00000008000000+120d → set a breakpoint at the dereferenced address of base + the offset we see in the image above (don’t include "h" bc that just indicates hex)</p>
 </li>
 <li>
 <p>c → for continue</p>
