@@ -13,7 +13,7 @@ name = "Emily Murphy"
 [params]
 author = "Emily Murphy"
 description = "Emily Murphy's Personal Website"
-googleAnalytics = "G-X2SRPQFBT4"
+googleAnalytics = "G-RGGMN6LZ5F"
 dateFormat = "2006-01-02"
 paginationSinglePost = true
 style = "light"

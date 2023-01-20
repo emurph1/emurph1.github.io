@@ -8,6 +8,7 @@
     {{ block "head" . }}
         {{ partial "head.html" . }}
     {{ end }}
+    {{ template "_internal/google_analytics.html" . }}
 </head>
 <body> 
     <a class="skip-main" href="#main">{{ i18n "skipToContent" }}</a>
