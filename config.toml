@@ -4,7 +4,6 @@ title = "Emily's Personal Website!"
 theme = "anubis"
 paginate = 4
 
-
 disqusShortname = ""
 googleAnalytics = ""
 
@@ -14,9 +13,9 @@ name = "Emily Murphy"
 [params]
 author = "Emily Murphy"
 description = "Emily Murphy's Personal Website"
-gtm_id = "G-X2SRPQFBT4"
+gtm_id = "GTM-KFXTPM8"
 gtm_ga = true
-gtm_endpoint = "murphe22.com"
+gtm_endpoint = "gtm.murphe22.com"
 dateFormat = "2006-01-02"
 paginationSinglePost = true
 style = "light"
