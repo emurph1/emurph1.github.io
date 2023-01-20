@@ -5,6 +5,17 @@
 {{ end }}
 <html lang="{{ .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
 <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGGMN6LZ5F"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RGGMN6LZ5F');
+    </script>
+
     {{ block "head" . }}
         {{ partial "head.html" . }}
     {{ end }}
