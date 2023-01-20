@@ -21,7 +21,7 @@ If you have any questions or want to talk about it, DM me in Discord (@nightfury
 With all the links in this doc, I highly encourage you to also watch those YouTube Videos and read all the links that are in here because all of it helps in not only studying for the exam, but knowing everything about the exam (the structure, who takes it, why you should take it, what content it has, etc.)
 
 ## So, what is the exam?: CySA+
-“CompTIA Cybersecurity Analyst+is an IT workforce certification that applies behavioral analytics to networks and devices to prevent, detect and combat cybersecurity threats through continuous security monitoring.”
+“CompTIA Cybersecurity Analyst+ is an IT workforce certification that applies behavioral analytics to networks and devices to prevent, detect and combat cybersecurity threats through continuous security monitoring.”
 
 - I took the CS0-002 Exam (CS0-001 is retired as of October 21, 2020 in English)
 - Max of 85 questions in 165 minutes (or 2hrs and 45 min)

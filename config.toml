@@ -14,6 +14,7 @@ name = "Emily Murphy"
 [params]
 author = "Emily Murphy"
 description = "Emily Murphy's Personal Website"
+gtm_id = "G-X2SRPQFBT4"
 dateFormat = "2006-01-02"
 paginationSinglePost = true
 style = "light"
