@@ -47,6 +47,9 @@
 <meta property="article:tag" content="">
 <meta property="article:publisher" content="https://www.facebook.com/XXX"> -->
 
-{{ template "_internal/google_analytics.html" . }}
+{{ if and (.Site.GoogleAnalytics) (hugo.IsProduction) }}
+    {{ template "_internal/google_analytics.html" . }}
+{{ end }}
 
 {{ partial "head-extra.html" . }}
+{{ template "_internal/google_analytics.html" . }}
