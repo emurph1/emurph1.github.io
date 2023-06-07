@@ -10,12 +10,14 @@
 <meta name=description content="TAMUctf 2022">
 <link rel=icon type=image/x-icon href=https://murphe22.com/favicon.ico>
 <link rel=apple-touch-icon-precomposed href=https://murphe22.com/favicon.png>
-<link rel=stylesheet href=https://murphe22.com/css/style.min.d5f59c9c7a22901a590b8b30252f1bfb21e1b9fc0867fd35e1851f498f522342.css integrity="sha256-1fWcnHoikBpZC4swJS8b+yHhufwIZ/014YUfSY9SI0I=">
+<link rel=stylesheet href=https://murphe22.com/css/style.min.86cc07ffbf097091b044e6ab38faf261f12d127590a07e1b6704266bd5d33fa1.css integrity="sha256-hswH/78JcJGwROarOPryYfEtEnWQoH4bZwQma9XTP6E=">
 <script src=https://murphe22.com/js/script.min.510c781c39dbb21b4c76d85c82e2bdf4689220adbb7cd61e49e9d293e442fb42.js type=text/javascript integrity="sha256-UQx4HDnbshtMdthcguK99GiSIK27fNYeSenSk+RC+0I="></script>
 <meta property="og:title" content="TAMUctf 2022">
 <meta property="og:description" content="TAMUctf 2022">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://murphe22.com/posts/tamuctf22/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-04-17T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-04-17T00:00:00+00:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="TAMUctf 2022">
 <meta name=twitter:description content="TAMUctf 2022">
@@ -53,7 +55,6 @@
 <a href=https://murphe22.com/about/ title>About</a>
 <a href=https://murphe22.com/posts/ title>Writeups</a>
 <a href=https://murphe22.com/contact/ title>Contact</a>
-<a href=https://murphe22.com/tags/ title>Tags</a>
 </nav>
 </header>
 <main id=main tabindex=-1>
@@ -76,13 +77,14 @@
 <div class=paragraph>
 <p>For this CTF, I only wrote writeups for the challenges I found the most interesting/wanted to make a writeup for in case I need the skills for future CTFs.</p>
 </div>
-<h1 id=_non_stick_disk class=sect0>Non Stick Disk</h1>
+<div class=sect1>
+<h2 id=_non_stick_disk>Non Stick Disk</h2>
+<div class=sectionbody>
 <div class=paragraph>
 <p>CTF username: nightfury</p>
 </div>
-<div class=sect1>
-<h2 id=_prompt>Prompt</h2>
-<div class=sectionbody>
+<div class=sect2>
+<h3 id=_prompt>Prompt</h3>
 <div class=paragraph>
 <p>We’ve established a persistence mechanism on the attached disk. Can you determine what that is?</p>
 </div>
@@ -93,10 +95,8 @@
 <p><strong>Given</strong>: non-stick-disk.zlib</p>
 </div>
 </div>
-</div>
-<div class=sect1>
-<h2 id=_solve>Solve</h2>
-<div class=sectionbody>
+<div class=sect2>
+<h3 id=_solve>Solve</h3>
 <div class=paragraph>
 <p>First I had to figure out how to decompress a zlib file within a directory. I used <a href=https://unix.stackexchange.com/questions/22834/how-to-uncompress-zlib-data-in-unix>this</a> resource in order to do it and piped it into a directory. Full command:</p>
 </div>
@@ -108,7 +108,7 @@
 </div>
 <div class=imageblock>
 <div class=content>
-<img src=../non-stick-disk/os-release.png alt="os release">
+<img src=../images/tamuctf/non-stick-disk/os-release.png alt="os release">
 </div>
 </div>
 <div class=paragraph>
@@ -120,17 +120,8 @@
 <div class=paragraph>
 <p>With my two filesystems, I could finally do a diff and see what things may be interesting to investigate…​ much better than having to search through each file (which I had already done plenty of by this point).</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tbody><tr>
-<td class=icon>
-<div class=title>Note</div>
-</td>
-<td class=content>
-the nonstick directory is actually mounted on a directory called mountpoint
-</td>
-</tr>
-</tbody></table>
+<div class=paragraph>
+<p><strong>NOTE:</strong> the nonstick directory is actually mounted on a directory called mountpoint</p>
 </div>
 <div class=paragraph>
 <p>To diff the filesystems: <code>diff -qr mountpoint ubuntu > diffs.txt</code></p>
@@ -173,11 +164,12 @@ the nonstick directory is actually mounted on a directory called mountpoint
 <p>Flag: <code>gigem{a_bit_too_obvious_if_you_ask_me}</code></p>
 </div>
 <div class=paragraph>
-<p>This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool :D.</p>
+<p>This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool 😃.</p>
 </div>
 <div class=imageblock>
 <div class=content>
 <img src=../images/tamuctf/non-stick-disk/solvers2.png alt=300 width=300>
+</div>
 </div>
 </div>
 <div class=sect2>
@@ -186,15 +178,16 @@ the nonstick directory is actually mounted on a directory called mountpoint
 <p>After solving the challenge in the way described above, I wondered if you could solve it quicker using grep.</p>
 </div>
 <div class=paragraph>
-<p>Turns out Addison didn’t strip symbols, so you could in fact <code>grep -r "backdoor"</code> and find the file…​. :pensive:, but at least I learned a lot in the process!</p>
+<p>Turns out Addison didn’t strip symbols, so you could in fact <code>grep -r "backdoor"</code> and find the file 😔…​ but at least I learned a lot in the process!</p>
 </div>
 </div>
 </div>
 </div>
-<h1 id=_vanity class=sect0>Vanity</h1>
 <div class=sect1>
-<h2 id=_prompt_2>Prompt</h2>
+<h2 id=_vanity>Vanity</h2>
 <div class=sectionbody>
+<div class=sect2>
+<h3 id=_prompt_2>Prompt</h3>
 <div class=paragraph>
 <p><a href=https://github.com/tamuctf/vanity>Read, weep, seethe, and cope.</a></p>
 </div>
@@ -205,10 +198,8 @@ the nonstick directory is actually mounted on a directory called mountpoint
 <p><strong>Given:</strong> <a href=https://c.tenor.com/3BMRCVepIa8AAAAC/vanity-smurf-youre-so-vain.gif>vanity-smurf-youre-so-vain.gif</a></p>
 </div>
 </div>
-</div>
-<div class=sect1>
-<h2 id=_solve_2>Solve</h2>
-<div class=sectionbody>
+<div class=sect2>
+<h3 id=_solve_2>Solve</h3>
 <div class=paragraph>
 <p>So at first glance, the link goes to a git repo that is completely empty. There was only one commit and zero history so that was interesting…​.</p>
 </div>
@@ -239,10 +230,12 @@ the nonstick directory is actually mounted on a directory called mountpoint
 </div>
 </div>
 </div>
-<h1 id=_existing_tooling class=sect0>Existing Tooling</h1>
+</div>
 <div class=sect1>
-<h2 id=_prompt_3>Prompt</h2>
+<h2 id=_existing_tooling>Existing Tooling</h2>
 <div class=sectionbody>
+<div class=sect2>
+<h3 id=_prompt_3>Prompt</h3>
 <div class=paragraph>
 <p>Have fun reversing this little crackme. :)</p>
 </div>
@@ -250,21 +243,10 @@ the nonstick directory is actually mounted on a directory called mountpoint
 <p><strong>Given:</strong> existing-tooling binary</p>
 </div>
 </div>
-</div>
-<div class=sect1>
-<h2 id=_solve_3>Solve</h2>
-<div class=sectionbody>
-<div class="admonitionblock note">
-<table>
-<tbody><tr>
-<td class=icon>
-<div class=title>Note</div>
-</td>
-<td class=content>
-I did not complete this challenge
-</td>
-</tr>
-</tbody></table>
+<div class=sect2>
+<h3 id=_solve_3>Solve</h3>
+<div class=paragraph>
+<p><strong>NOTE</strong>: I did not complete this challenge</p>
 </div>
 <div class=paragraph>
 <p>First things first with any RE challenge is to check file type and run the bad boy:</p>
@@ -335,7 +317,9 @@ I did not complete this challenge
 </div>
 </div>
 </div>
+</div>
 <div class=post-info>
+<div class="post-date dt-published">2022-04-17</div>
 <a class="post-hidden-url u-url" href=https://murphe22.com/posts/tamuctf22/>https://murphe22.com/posts/tamuctf22/</a>
 <a href=https://murphe22.com class="p-name p-author post-hidden-author h-card" rel=me>Emily Murphy</a>
 <div class=post-taxonomies>
@@ -351,9 +335,10 @@ I did not complete this challenge
 </article>
 <div class="pagination post-pagination">
 <div class="left pagination-item">
-<a href=/posts/comptiacysa/>CompTIA CySA+</a>
+<a href=/posts/comptiasecplus/>CompTIA Sec+</a>
 </div>
-<div class="right pagination-item disabled">
+<div class="right pagination-item">
+<a href=/posts/nsacodebreaker/>NSA Codebreakers 2021</a>
 </div>
 </div>
 </main>
