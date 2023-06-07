@@ -12,11 +12,12 @@ categories = ["blog"]
 Just a nice little life update for any interested in reading!
 <!--more-->
 
-
 # Where do I even start?
 It has been close to year since I touched my website... I guess that is kind of sad. I don't mean to leave my website so desolate, but I also won't lie in that I don't have much to update.
 
 Instead of writing so much here, I will just suffice and say that I am happy where I am in life and am taking my time to enjoy it.
+
+Sorry to be pretty boring and not add much!
 
 Here are some pics from my recent life:
 
