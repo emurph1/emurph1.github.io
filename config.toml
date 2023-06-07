@@ -4,6 +4,8 @@ title = "Emily's Personal Website!"
 theme = "anubis"
 paginate = 4
 
+enableEmoji = true
+
 disqusShortname = ""
 googleAnalytics = ""
 
@@ -85,12 +87,6 @@ name = "Contact"
 identifier = "contact"
 url = "/contact/"
 weight = 3
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 4
 
 [taxonomies]
 category = "categories"

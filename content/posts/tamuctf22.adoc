@@ -1,7 +1,7 @@
 +++
 author = "Emily Murphy"
 title = "TAMUctf 2022"
-date = "2022-4-17"
+date = "2022-04-17"
 description = "TAMUctf 2022"
 tags = [
     "ctfs",
@@ -19,27 +19,27 @@ TAMUctf is a jeopardy-style cybersecurity capture the flag competition developed
 For this CTF, I only wrote writeups for the challenges I found the most interesting/wanted to make a writeup for in case I need the skills for future CTFs.
 <!--more-->
 
-= Non Stick Disk
+== Non Stick Disk
 :source-highlighter: pygments
 :source-language: python
 
 CTF username: nightfury
 
-== Prompt
+=== Prompt
 We've established a persistence mechanism on the attached disk. Can you determine what that is?
 
 The flag is in the standard format. You'll know it when you see it. :)
 
 *Given*: non-stick-disk.zlib
 
-== Solve
+=== Solve
 First I had to figure out how to decompress a zlib file within a directory. I used https://unix.stackexchange.com/questions/22834/how-to-uncompress-zlib-data-in-unix[this] resource in order to do it and piped it into a directory. Full command:
 
 `zlib-flat -uncompress < non-stick-disk.zlib > nonstick`
 
 From there, I noticed there are a TON of files in the directory, so one trick of forensics (that I now know) is to check the `etc/os-release` and then do a diff on the filesystems. From cat-ing the os-release, we see this:
 
-image::../non-stick-disk/os-release.png[]
+image::../images/tamuctf/non-stick-disk/os-release.png[]
 
 Now came the part that took me the longest... finding a root filesystem that I could diff on. At first, Rohan and I were pouring through FTK Imager and Autopsy to find sus things, but came to no promising findings (even had a little red herring). After a copious amount of researching, one key google search and many clicks later got me to https://help.ubuntu.com/community/DebootstrapChroot[Debootstrap]. A little bit more reading on how to Debootstrap and understanding what architecture the nonstick filesystem is (there is a `x86_64-linux_gnu` directory in `lib`, which indicated amd64), we could create our own Ubuntu 20.04 Focal Fossa https://pub.nethence.com/xen/debootstrap[quick]! Actual command:
 
@@ -47,7 +47,7 @@ Now came the part that took me the longest... finding a root filesystem that I c
 
 With my two filesystems, I could finally do a diff and see what things may be interesting to investigate... much better than having to search through each file (which I had already done plenty of by this point).
 
-NOTE: the nonstick directory is actually mounted on a directory called mountpoint
+**NOTE:** the nonstick directory is actually mounted on a directory called mountpoint
 
 To diff the filesystems: `diff -qr mountpoint ubuntu > diffs.txt`
 
@@ -72,27 +72,27 @@ image::../images/tamuctf/non-stick-disk/cyberchef.png[]
 
 Flag: `gigem{a_bit_too_obvious_if_you_ask_me}`
 
-This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool :D.
+This challenge was incredibly infuriating, but really cool after solving it. Also being one of two solvers was really cool :smiley:.
 
 image::../images/tamuctf/non-stick-disk/solvers2.png[300,300]
 
 === Alternatve (and much faster solve)
 After solving the challenge in the way described above, I wondered if you could solve it quicker using grep.
 
-Turns out Addison didn't strip symbols, so you could in fact `grep -r "backdoor"` and find the file.... :pensive:, but at least I learned a lot in the process!
+Turns out Addison didn't strip symbols, so you could in fact `grep -r "backdoor"` and find the file :pensive:... but at least I learned a lot in the process!
 
-= Vanity
+== Vanity
 :source-highlighter: pygments
 :source-language: python
 
-== Prompt
+=== Prompt
 https://github.com/tamuctf/vanity[Read, weep, seethe, and cope.]
 
 Only commits you need to consider are those made by VTCAKAVSMoACE.
 
 *Given:* https://c.tenor.com/3BMRCVepIa8AAAAC/vanity-smurf-youre-so-vain.gif[vanity-smurf-youre-so-vain.gif]
 
-== Solve
+=== Solve
 So at first glance, the link goes to a git repo that is completely empty. There was only one commit and zero history so that was interesting....
 
 The prompt and gif associated with this challenge gave a good amount away. Now I was not very smart and got caught in an article saying you _couldn't_ mirror a git repo and it wasn't until Rohan looked into it that I realized my grave mistake....
@@ -108,15 +108,15 @@ image::../images/tamuctf/vanity_flag.png[]
 
 Flag: `gigem{watch_the_night_and_bleed_for_me}`
 
-= Existing Tooling
+== Existing Tooling
 
-== Prompt
+=== Prompt
 Have fun reversing this little crackme. :)
 
 *Given:* existing-tooling binary
 
-== Solve
-NOTE: I did not complete this challenge
+=== Solve
+**NOTE**: I did not complete this challenge
 
 First things first with any RE challenge is to check file type and run the bad boy:
 

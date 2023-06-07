@@ -1,7 +1,7 @@
 +++
 author = "Emily Murphy"
 title = "CompTIA CySA+"
-date = "2021-3-27"
+date = "2021-03-27"
 description = "My CompTIA CySA+ Journey"
 tags = [
     "blog",

@@ -24,5 +24,5 @@ I intended to get this certification during my Sophomore year of university... I
 3. I got the President position for Texas A&M Cybersecurity Club.
 4. I was just lazy and didn't want to go for it despite having a voucher for it.
 
-
+:smiley:
 
